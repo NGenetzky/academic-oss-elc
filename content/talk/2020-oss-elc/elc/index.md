@@ -2,8 +2,8 @@
 title: "2020 OSS ELC"
 authors: [ "nathan-genetzky" ]
 
-subtitle: ""
-summary: ""
+# subtitle: ""
+# summary: ""
 tags: []
 categories: [ "2020-oss-elc" ]
 date: 2020-06-29

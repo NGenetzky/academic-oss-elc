@@ -4,7 +4,7 @@ authors: [ "nathan-genetzky" ]
 
 summary: ""
 tags: []
-categories: []
+categories: [ "2020-oss-elc" ]
 date: 2020-06-29
 external_link: ""
 
@@ -25,6 +25,8 @@ links:
   url: "https://events.linuxfoundation.org/open-source-summit-north-america/"
 - name: ELC
   url: "https://events.linuxfoundation.org/embedded-linux-conference-north-america/"
+- name: youtube
+  url: "https://www.youtube.com/watch?v=vjKPw5FqleM&list=PLbzoR-pLrL6oyIqGsEZdb1E4pWzWn9qOZ"
 
 # url_code: ""
 # url_pdf: ""
@@ -43,6 +45,7 @@ links:
 
 - [oss](https://events.linuxfoundation.org/open-source-summit-north-america/)
 - [elc](https://events.linuxfoundation.org/embedded-linux-conference-north-america/)
+- [youtube playlist](https://www.youtube.com/playlist?list=PLbzoR-pLrL6oyIqGsEZdb1E4pWzWn9qOZ)
 
 > SESSION CAPTIONING
 > Our keynote sessions will have captioning available for attendees during
@@ -68,9 +71,4 @@ attendees once these are completed post-event.
 
 ### Attend
 
-- CIP Kernel Team Activities to Accomplish Super Long Term Support - Masashi Kudo, Cybertrust Japan Co., Ltd. & SZ Lin, Moxa Inc.
-
-- https://ossna2020.sched.com/event/c3VM/cip-kernel-team-activities-to-accomplish-super-long-term-support-masashi-kudo-cybertrust-japan-co-ltd-sz-lin-moxa-inc
-- https://ossna2020.sched.com/event/c413/keynote-linus-torvalds-creator-of-linux-git-in-conversation-with-dirk-hohndel-vice-president-chief-open-source-officer-vmware
-- https://ossna2020.sched.com/event/c3SS/yocto-project-lts-releases-nicolas-dechesne-linaro-david-reyna-wind-river
-- https://ossna2020.sched.com/event/c3TK/linux-gpio-evolution-and-current-state-of-the-user-api-bartosz-golaszewski-baylibre
+- [sponsor-showcase](https://ossna2020.sched.com/event/cc8J/sponsor-showcase)
