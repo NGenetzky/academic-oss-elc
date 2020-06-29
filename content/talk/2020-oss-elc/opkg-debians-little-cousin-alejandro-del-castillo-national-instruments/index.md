@@ -35,3 +35,16 @@ projects: [ "2020-oss-elc" ]
 > On this talk we will cover the project architecture, as well as the design decisions that make opkg highly customizable, enabling trade-offs of speed/space. The talk will also cover the solver backend plugin mechanism, which was developed as a way to re-use existing dependency solver technologies, instead of maintaining a custom one. The backend currently supports libsolv, a very popular library used by other package managers (dnf, hawkey). The talk will explain the basics of libsolv, and how it leverages SAT solvers in the dependency package management space. It will also cover differences between the libsolv solver and the old internal solver one.
 >
 > Finally, Alejandro will share some thought on the future of the project, challenges and work ahead.
+
+### Ipkg
+
+- Ipkg 2001  Itsy bitsy package manage
+- started as shell script written as C
+
+#### Opkg
+
+- 2008
+- fork of ipkg
+- adopted by open embedded
+
+Much simplier than dpkg

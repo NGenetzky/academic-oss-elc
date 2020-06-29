@@ -150,3 +150,31 @@ Future
 - egeria.odpi.org
 - Open Metadata and governance
 - ODPi Egeria enables exchange of metadata between tools
+
+- https://opengovernance.odpi.org/roles/
+- https://roaringelephant.org/2018/09/25/episode-107-open-metadata-and-governance-masterclass-with-mandy-chessell-part-1/
+- https://onlinexperiences.com/QPresenter/PowerpointUpload/389104/AC42944E-29A3-4A82-B984-B35F55815E72/AC42944E-29A3-4A82-B984-B35F55815E72-index.htm?slideNumber=001&RandomValue=1593450044772#
+- https://www.youtube.com/watch?v=ryd3KFWT1mc&feature=youtu.be
+
+### Yocto Channel
+
+- Automotive people use OSTree
+  - the beauty with OSTree is that you even store delta, basically. In pratice you typically can afford to have A+B+C+...+recovery
+
+
+### Ftrace preempt RT
+
+> Welcome Everyone @here to the Ask the Expert Session with Steven Rostedt, Open Source Engineer, VMware!
+> Steven Rostedt is the creator and current maintainer of Ftrace (the official tracer of the Linux kernel). He's also one of the original developers of the PREEMPT_RT patch, and today maintains the 5.4-rt real-time stable tree.
+> Ask Steven about tracing, real-time, or anything else that has to do with Linux kernel development.
+
+- Q: What are the top userspace tools for interfacing with Ftrace? Do you use those kinds of tools frequently?
+  - https://osselc.slack.com/archives/C0140RTKZ71/p1593455023040800
+  - A: Are trace-cmd and kernelshark the way to go to use ftrace ?
+  - A: Yes! I think you answered that question for me :slightly_smiling_face:  And kernelshark 2.0 will be out soon that will have a lot more visualization features! And trace-cmd will hopefully turn into a library as well to let other tools access ftrace.
+
+- Q: I am trying to troubleshoot an issue with SLOB, there is a lot of traffic there, but I want to track allocations/deallocations and modification of slob/kmemcache objects. my q is - what is the best way to do it for a busy piece of code? and how do you track modification of an object and not just allocations/deallocations, and if you do it with printk - where and how to save all those millions of printk messages so that i can go back in history and review the lifecycle of any particular slob/kmemcache object? 
+  - https://osselc.slack.com/archives/C0140RTKZ71/p1593455349057500
+  - Use trace_printk() which writes into the tracing buffer. Use trace-cmd record to capture that data live into a file and examine it offline later. Use -b option to increase the size of the per cpu buffers (it's in 1K increments, 1000 is 1M).
+
+
