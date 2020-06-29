@@ -8,7 +8,7 @@ authors: [ "nathan-genetzky" ]
 categories: [ "2020-oss-elc" ]
 date: 2020-06-29
 featured: false
-draft: false
+draft: true
 
 # event: "2020 OSS ELC"
 # event_url: ""
