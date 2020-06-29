@@ -1,31 +1,35 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title: "2020 OSS ELC"
+authors: [ "nathan-genetzky" ]
+
 subtitle: ""
 summary: ""
-authors: []
 tags: []
 categories: []
-date: 2020-06-29T08:27:16-05:00
-lastmod: 2020-06-29T08:27:16-05:00
+date: 2020-06-29
 featured: false
 draft: false
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+event: "2020 OSS ELC"
+event_url: ""
+location: ""
+summary: ""
+abstract: ""
+date: 2020-06-29T8:30:00
+date_end: 2020-07-02T12:00:00
+publishDate: "2020-06-29"
+
+links:
+- name: OSS
+  url: "https://events.linuxfoundation.org/open-source-summit-north-america/"
+- name: ELC
+  url: "https://events.linuxfoundation.org/embedded-linux-conference-north-america/"
+
 image:
   caption: ""
   focal_point: ""
   preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
+projects: [ 2020-oss-elc ]
 ---
 
 ## Open Source Summit & Embedded Linux Conference North America
