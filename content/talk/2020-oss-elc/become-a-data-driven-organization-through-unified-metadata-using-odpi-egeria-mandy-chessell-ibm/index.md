@@ -29,3 +29,5 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
+
+> Become a data-driven organization through exploration of the latest developments and trends in managing compliance, GDPR, data catalogs and governance. The ODPi Egeria project at the Linux Foundation will share how IBM, ING and others are collaborating to build an open ecosystem (interfaces, repositories, tools and experts to collaborate and exchange content) while adhering to governance guidelines and imperatives. Join this session to learn how an open metadata and governance and how you can benefit from it.

@@ -31,6 +31,8 @@ links:
   url: "https://ossna2020.sched.com/print"
 - name: my schedule
   url: "https://ossna2020.sched.com/nathansen301"
+- name: Google Notes
+  url: "https://docs.google.com/document/d/1weV66lmTJMlYynxUH9j4rBy2_wDkblWR4_T00YtbduY/edit"
 
 # url_code: ""
 # url_pdf: ""
@@ -99,11 +101,20 @@ attendees once these are completed post-event.
 
 ### Talks
 
+Missed
+
 - https://ossna2020.sched.com/event/c3VM/cip-kernel-team-activities-to-accomplish-super-long-term-support-masashi-kudo-cybertrust-japan-co-ltd-sz-lin-moxa-inc
+- https://ossna2020.sched.com/event/c3TK/linux-gpio-evolution-and-current-state-of-the-user-api-bartosz-golaszewski-baylibre
+- https://ossna2020.sched.com/event/c3YV/tutorial-bashful-to-bold-a-bash-primer-alex-juarez-rackspace
+
+Attended
+
 - https://ossna2020.sched.com/event/c413/keynote-linus-torvalds-creator-of-linux-git-in-conversation-with-dirk-hohndel-vice-president-chief-open-source-officer-vmware
 - https://ossna2020.sched.com/event/c3SS/yocto-project-lts-releases-nicolas-dechesne-linaro-david-reyna-wind-river
-- https://ossna2020.sched.com/event/c3TK/linux-gpio-evolution-and-current-state-of-the-user-api-bartosz-golaszewski-baylibre
 - https://ossna2020.sched.com/event/c47M/tutorial-introduction-to-the-embedded-boot-loader-u-boot-behan-webster-converse-in-code
+
+Future
+
 - https://ossna2020.sched.com/event/c3RU/become-a-data-driven-organization-through-unified-metadata-using-odpi-egeria-mandy-chessell-ibm
 - https://ossna2020.sched.com/event/c3Ry/opkg-debians-little-cousin-alejandro-del-castillo-national-instruments
 - https://ossna2020.sched.com/event/c3Pq/bof-the-yocto-project-and-openembedded-philip-balister-consultant-opensdr-nicolas-dechesne-linaro
@@ -133,3 +144,9 @@ attendees once these are completed post-event.
 - FINOS - Fintech - Financial
   - finos.org
 
+### Meta data talk
+
+- https://ossna2020.sched.com/event/c3RU/become-a-data-driven-organization-through-unified-metadata-using-odpi-egeria-mandy-chessell-ibm
+- egeria.odpi.org
+- Open Metadata and governance
+- ODPi Egeria enables exchange of metadata between tools
