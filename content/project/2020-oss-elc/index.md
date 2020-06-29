@@ -178,3 +178,10 @@ Future
   - Use trace_printk() which writes into the tracing buffer. Use trace-cmd record to capture that data live into a file and examine it offline later. Use -b option to increase the size of the per cpu buffers (it's in 1K increments, 1000 is 1M).
 
 
+### Sandbox
+
+> Linux seccomp is a simple, yet powerful tool to sandbox running processes and significantly decrease potential damage in case the application code gets exploited. It provides fine-grained controls for the process to declare what it can and can’t do in advance and in most cases has zero performance overhead.
+>
+> The only disadvantage - to utilise this framework, application developers have to explicitly add sandboxing code to their projects and developers usually either delay this or omit completely as their main focus is mostly on the functionality of the code rather than security. Moreover, seccomp security model is based around system calls, but many developers, writing their code in high-level programming languages and frameworks, either have little knowledge to no experience with syscalls or just don’t have easy to use seccomp abstractions or libraries for their frameworks.
+>
+> All this makes seccomp not that widely adopted, but what if there was a way to easily sandbox any application in any programming language without writing a single line of code? This presentation discusses potential approaches and their pros and cons. 
