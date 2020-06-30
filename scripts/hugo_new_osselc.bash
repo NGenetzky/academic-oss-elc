@@ -90,26 +90,29 @@ main(){
     # https://ossna2020.sched.com/event/c3VY/linux-stateless-video-decoder-support-nicolas-dufresne-collabora
     # hugo_new_talk 'linux-stateless-video-decoder-support-nicolas-dufresne-collabora'
 
-    # https://ossna2020.sched.com/event/c3Pn/linux-on-open-source-hardware-with-risc-v-drew-fustini-beagleboardorg-foundation
-    hugo_new_talk 'linux-on-open-source-hardware-with-risc-v-drew-fustini-beagleboardorg-foundation'
+    # # https://ossna2020.sched.com/event/c3Pn/linux-on-open-source-hardware-with-risc-v-drew-fustini-beagleboardorg-foundation
+    # hugo_new_talk 'linux-on-open-source-hardware-with-risc-v-drew-fustini-beagleboardorg-foundation'
 
-    # https://ossna2020.sched.com/event/c3Wo/dma-buf-heaps-linux-user-space-device-buffer-allocation-and-its-uses-andrew-davis-texas-instruments
-    hugo_new_talk 'dma-buf-heaps-linux-user-space-device-buffer-allocation-and-its-uses-andrew-davis-texas-instruments'
+    # # https://ossna2020.sched.com/event/c3Wo/dma-buf-heaps-linux-user-space-device-buffer-allocation-and-its-uses-andrew-davis-texas-instruments
+    # hugo_new_talk 'dma-buf-heaps-linux-user-space-device-buffer-allocation-and-its-uses-andrew-davis-texas-instruments'
 
-    # https://ossna2020.sched.com/event/c3Pw/finding-sources-of-latency-on-your-linux-system-steven-rostedt-vmware
-    hugo_new_talk 'finding-sources-of-latency-on-your-linux-system-steven-rostedt-vmware'
+    # # https://ossna2020.sched.com/event/c3Pw/finding-sources-of-latency-on-your-linux-system-steven-rostedt-vmware
+    # hugo_new_talk 'finding-sources-of-latency-on-your-linux-system-steven-rostedt-vmware'
 
-    # https://ossna2020.sched.com/event/c3TE/robot-operating-system-ros-2-how-open-source-software-and-linux-is-powering-the-next-generation-of-robotics-katherine-scott-open-robotics
-    hugo_new_talk 'robot-operating-system-ros-2-how-open-source-software-and-linux-is-powering-the-next-generation-of-robotics-katherine-scott-open-robotics'
+    # # https://ossna2020.sched.com/event/c3TE/robot-operating-system-ros-2-how-open-source-software-and-linux-is-powering-the-next-generation-of-robotics-katherine-scott-open-robotics
+    # hugo_new_talk 'robot-operating-system-ros-2-how-open-source-software-and-linux-is-powering-the-next-generation-of-robotics-katherine-scott-open-robotics'
 
-    # https://ossna2020.sched.com/event/c3R6/developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft
-    hugo_new_talk 'developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft'
+    # # https://ossna2020.sched.com/event/c3R6/developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft
+    # hugo_new_talk 'developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft'
 
-    # https://ossna2020.sched.com/event/c4OB/tutorial-spelunking-for-hardware-data-matt-porter-konsulko-group
-    hugo_new_talk 'tutorial-spelunking-for-hardware-data-matt-porter-konsulko-group'
+    # # https://ossna2020.sched.com/event/c4OB/tutorial-spelunking-for-hardware-data-matt-porter-konsulko-group
+    # hugo_new_talk 'tutorial-spelunking-for-hardware-data-matt-porter-konsulko-group'
 
-    # https://ossna2020.sched.com/event/c3XO/using-mipi-dsi-as-main-display-interface-marcel-ziswiler-toradex-ag
-    hugo_new_talk 'using-mipi-dsi-as-main-display-interface-marcel-ziswiler-toradex-ag'
+    # # https://ossna2020.sched.com/event/c3XO/using-mipi-dsi-as-main-display-interface-marcel-ziswiler-toradex-ag
+    # hugo_new_talk 'using-mipi-dsi-as-main-display-interface-marcel-ziswiler-toradex-ag'
+
+    # https://ossna2020.sched.com/event/c3QN/there-is-no-store-for-self-driving-car-parts-running-the-ultimate-battery-powered-device-with-linux-stephen-segal-matt-fornero-cruise
+    hugo_new_talk 'there-is-no-store-for-self-driving-car-parts-running-the-ultimate-battery-powered-device-with-linux-stephen-segal-matt-fornero-cruise'
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
