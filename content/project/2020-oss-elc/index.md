@@ -215,8 +215,27 @@ Future
 
 ## Embedded linux channel
 
+### container_of
+
 > Brandon Streiff  12:26 PM
 > Fun piece of trivia: container_of isn't exclusive to Linux; the Windows DDK has it too, though they call it CONTAINING_RECORD and it has nowhere near as many type-safety checks as it does on Linux.
+
+#### RiSC V
+
+- risvc quickstart
+  - riscv on QEMU
+    - might be better for #2-track-riscv  but a simple way to get started is QEMU https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html
+    - https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html
+  - or Renode https://renode.readthedocs.io/en/latest/introduction/supported-boards.html
+
+### Linux Tracing
+
+- Linux tracing systems
+  - https://files.slack.com/files-pri/T015512GB8Q-F016BD92TQT/tracers.jpeg
+  - Here’s the same tracing ecosystem image, but color flattened for easier printing
+    - https://osselc.slack.com/files/U015W0X6RKK/F016B8M56EN/linux_tracing_systems.pdf?origin_team=T015512GB8Q&origin_channel=C014FHZSLRY
+
+- RE: dm-crypt Q in the Secure Boot session: Take a look at dm-crypt performance article https://blog.cloudflare.com/speeding-up-linux-disk-encryption/
 
 ### Kernel stable talk
 
