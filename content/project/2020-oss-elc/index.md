@@ -183,3 +183,20 @@ Future
 > The only disadvantage - to utilise this framework, application developers have to explicitly add sandboxing code to their projects and developers usually either delay this or omit completely as their main focus is mostly on the functionality of the code rather than security. Moreover, seccomp security model is based around system calls, but many developers, writing their code in high-level programming languages and frameworks, either have little knowledge to no experience with syscalls or just don’t have easy to use seccomp abstractions or libraries for their frameworks.
 >
 > All this makes seccomp not that widely adopted, but what if there was a way to easily sandbox any application in any programming language without writing a single line of code? This presentation discusses potential approaches and their pros and cons. 
+
+## Tuesday
+
+### Yocto Channel
+
+how to ensure you always reuse SSTATE AND DL_DIR from populate sdk
+
+```bash
+Robert Berger (ReliableEmbeddedSystems)  11:09 AM
+bitbake core-image-minimal
+11:10
+bitbake core-image-minimal -c populate_sdk
+11:10
+if you do this from the same shell DL_DIR and SSTATE will be reused anyways
+11:10
+-c populate_sdk_ext for extensible SDK
+```
