@@ -52,13 +52,13 @@ main(){
     # hugo_new_talk 'the-definitive-deep-dive-into-the-git-folder-rob-richardson-independent'
 
     # # https://ossna2020.sched.com/event/c3U6/tutorial-device-tree-dts-linux-board-bring-up-and-kernel-version-changing-a-review-of-some-lessons-learned-schuyler-patton-texas-instruments
-    # hugo_new_talk 'tutorial-device-tree-dts-linux-board-bring-up-and-kernel-version-changing-a-review-of-some-lessons-learned-schuyler-patton-texas-instruments'
+    hugo_new_talk 'tutorial-device-tree-dts-linux-board-bring-up-and-kernel-version-changing-a-review-of-some-lessons-learned-schuyler-patton-texas-instruments'
 
     # # https://ossna2020.sched.com/event/c3Ua/building-bare-metal-toolchains-crosstool-ng-and-yocto-project-mark-hatle-xilinx
-    # hugo_new_talk 'building-bare-metal-toolchains-crosstool-ng-and-yocto-project-mark-hatle-xilinx'
+    hugo_new_talk 'building-bare-metal-toolchains-crosstool-ng-and-yocto-project-mark-hatle-xilinx'
 
     # # https://ossna2020.sched.com/event/c4O5/tutorial-introduction-to-i2c-and-spi-both-in-kernel-and-in-userspace-michael-welling-qwerty-embedded-design-llc
-    # hugo_new_talk 'tutorial-introduction-to-i2c-and-spi-both-in-kernel-and-in-userspace-michael-welling-qwerty-embedded-design-llc'
+    hugo_new_talk 'tutorial-introduction-to-i2c-and-spi-both-in-kernel-and-in-userspace-michael-welling-qwerty-embedded-design-llc'
 
     # # https://ossna2020.sched.com/event/c3R6/developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft
     # hugo_new_talk 'developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft'
@@ -83,6 +83,30 @@ main(){
 
     # https://ossna2020.sched.com/event/c3UL/a-disciplined-approach-to-debugging-lev-iserovich-d-e-shaw-research
     hugo_new_talk 'a-disciplined-approach-to-debugging-lev-iserovich-d-e-shaw-research'
+
+    # https://ossna2020.sched.com/event/c3Pe/kernel-coding-the-upstream-way-tim-bird-sony
+    hugo_new_talk 'kernel-coding-the-upstream-way-tim-bird-sony'
+
+    # https://ossna2020.sched.com/event/c3VY/linux-stateless-video-decoder-support-nicolas-dufresne-collabora
+    hugo_new_talk 'linux-stateless-video-decoder-support-nicolas-dufresne-collabora'
+
+    # https://ossna2020.sched.com/event/c3Wo/dma-buf-heaps-linux-user-space-device-buffer-allocation-and-its-uses-andrew-davis-texas-instruments
+    hugo_new_talk 'dma-buf-heaps-linux-user-space-device-buffer-allocation-and-its-uses-andrew-davis-texas-instruments'
+
+    # https://ossna2020.sched.com/event/c3Pw/finding-sources-of-latency-on-your-linux-system-steven-rostedt-vmware
+    hugo_new_talk 'finding-sources-of-latency-on-your-linux-system-steven-rostedt-vmware'
+
+    # https://ossna2020.sched.com/event/c3TE/robot-operating-system-ros-2-how-open-source-software-and-linux-is-powering-the-next-generation-of-robotics-katherine-scott-open-robotics
+    hugo_new_talk 'robot-operating-system-ros-2-how-open-source-software-and-linux-is-powering-the-next-generation-of-robotics-katherine-scott-open-robotics'
+
+    # https://ossna2020.sched.com/event/c3R6/developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft
+    hugo_new_talk 'developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft'
+
+    # https://ossna2020.sched.com/event/c4OB/tutorial-spelunking-for-hardware-data-matt-porter-konsulko-group
+    hugo_new_talk 'tutorial-spelunking-for-hardware-data-matt-porter-konsulko-group'
+
+    # https://ossna2020.sched.com/event/c3XO/using-mipi-dsi-as-main-display-interface-marcel-ziswiler-toradex-ag
+    hugo_new_talk 'using-mipi-dsi-as-main-display-interface-marcel-ziswiler-toradex-ag'
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
