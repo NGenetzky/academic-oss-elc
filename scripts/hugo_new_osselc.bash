@@ -82,7 +82,7 @@ main(){
     # hugo_new_talk 'pipewire-the-new-multimedia-service-now-ready-for-automotive-julian-bouzas-collabora'
 
     # https://ossna2020.sched.com/event/c3UL/a-disciplined-approach-to-debugging-lev-iserovich-d-e-shaw-research
-    hugo_new_talk 'a-disciplined-approach-to-debugging-lev-iserovich-d-e-shaw-research'
+    # hugo_new_talk 'a-disciplined-approach-to-debugging-lev-iserovich-d-e-shaw-research'
 
     # https://ossna2020.sched.com/event/c3Pe/kernel-coding-the-upstream-way-tim-bird-sony
     hugo_new_talk 'kernel-coding-the-upstream-way-tim-bird-sony'
