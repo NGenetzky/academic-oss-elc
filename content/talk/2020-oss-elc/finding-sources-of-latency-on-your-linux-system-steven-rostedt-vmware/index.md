@@ -4,11 +4,15 @@ authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""
-# tags: []
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
 featured: false
 draft: false
+
+tags:
+- Embedded Linux Conference (ELC)
+- Real-Time Linux - Performance
+- Tuning and Mainlining
 
 # event: "2020 OSS ELC"
 # event_url: ""

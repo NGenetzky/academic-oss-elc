@@ -208,6 +208,11 @@ Future
 - https://github.com/containers/storage/tree/master/docs
 - meta-virt
 
+#### Drew Fustini Linux on RISV-V
+
+- https://hackaday.com/2020/06/05/lattice-semiconductor-targets-bitstream-reverse-engineering-in-latest-propel-sdk-license/#div-comment-6251902
+- https://www.crowdsupply.com/microchip/polarfire-soc-icicle-kit
+
 ## Embedded linux channel
 
 > Brandon Streiff  12:26 PM

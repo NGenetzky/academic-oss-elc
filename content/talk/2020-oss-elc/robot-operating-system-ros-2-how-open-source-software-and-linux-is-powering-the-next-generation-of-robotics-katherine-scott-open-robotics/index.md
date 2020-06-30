@@ -4,11 +4,14 @@ authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""
-# tags: []
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
 featured: false
 draft: false
+
+tags:
+- Embedded Linux Conference (ELC)
+- Open Source Project Updates
 
 event: "Robot Operating System (ROS) 2 - How Open Source Software and Linux is Powering the Next Generation of Robotics"
 event_url: "https://ossna2020.sched.com/event/c3TE/robot-operating-system-ros-2-how-open-source-software-and-linux-is-powering-the-next-generation-of-robotics-katherine-scott-open-robotics"
