@@ -151,7 +151,7 @@ What baords could you use?
 - ULX3S
   - ECP FPGA dev board
 
-### Getting started with FPGA?
+### Quickstart - FPGA
 
 - Fomu
   - RGB LED
@@ -159,6 +159,6 @@ What baords could you use?
   - Verilog
   - LiteX
 
-### No Hardware
+### Quickstart -No Hardware
 
 - [Renode](renode.io)
