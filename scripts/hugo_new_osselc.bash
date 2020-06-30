@@ -79,7 +79,10 @@ main(){
     # hugo_new_talk 'soda-one-data-framework-infinite-possibilities'
 
     # https://ossna2020.sched.com/event/c3TN/pipewire-the-new-multimedia-service-now-ready-for-automotive-julian-bouzas-collabora
-    hugo_new_talk 'pipewire-the-new-multimedia-service-now-ready-for-automotive-julian-bouzas-collabora'
+    # hugo_new_talk 'pipewire-the-new-multimedia-service-now-ready-for-automotive-julian-bouzas-collabora'
+
+    # https://ossna2020.sched.com/event/c3UL/a-disciplined-approach-to-debugging-lev-iserovich-d-e-shaw-research
+    hugo_new_talk 'a-disciplined-approach-to-debugging-lev-iserovich-d-e-shaw-research'
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
