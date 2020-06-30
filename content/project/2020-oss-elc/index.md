@@ -188,15 +188,43 @@ Future
 
 ### Yocto Channel
 
-how to ensure you always reuse SSTATE AND DL_DIR from populate sdk
+- https://www.yoctoproject.org/yocto-project-dev-day-virtual-north-america-2020/
 
-```bash
-Robert Berger (ReliableEmbeddedSystems)  11:09 AM
-bitbake core-image-minimal
-11:10
-bitbake core-image-minimal -c populate_sdk
-11:10
-if you do this from the same shell DL_DIR and SSTATE will be reused anyways
-11:10
--c populate_sdk_ext for extensible SDK
-```
+#### how to ensure you always reuse SSTATE AND DL_DIR from populate sdk
+
+> Robert Berger (ReliableEmbeddedSystems)  11:09 AM
+> `bitbake core-image-minimal`
+> 11:10
+> `bitbake core-image-minimal -c populate_sdk`
+> 11:10
+> if you do this from the same shell DL_DIR and SSTATE will be reused anyways
+> 11:10
+> `-c populate_sdk_ext` for extensible SDK
+
+#### oci containers
+
+- Yocto dev day talk about microservices and containers
+- my examples from my previous talks are in https://github.com/konsulko/meta-container-demo
+- https://github.com/containers/storage/tree/master/docs
+- meta-virt
+
+## Embedded linux channel
+
+> Brandon Streiff  12:26 PM
+> Fun piece of trivia: container_of isn't exclusive to Linux; the Windows DDK has it too, though they call it CONTAINING_RECORD and it has nowhere near as many type-safety checks as it does on Linux.
+
+### Kernel stable talk
+
+- https://ossna2020.sched.com/event/c3Rm/safeguards-in-the-stable-kernel-process-sasha-levin-microsoft
+
+> There is a common misconception that while Linus's tree is heavily tested and validated, the Stable and LTS trees aren't reviewed or tested at all. This talk aims to change this misconception.
+>
+> In reality, Stable trees are not only heavily tested, but the testing they are being subjected to is much more similar to "real world" workloads that the kernel will have to endure once it's released.
+>
+> We will go over every step a patch goes from the point it's sent to the mailing list, to after it was included in a stable tree, highlighting the process which makes it very difficult to introduce bugs into the Stable trees. 
+
+- AUTOSEL
+  - [Machine learning and stable kernels](https://lwn.net/Articles/764647/)
+- `queue/*` branches in stable-rc tree
+- What is Linux-next tree?
+  - It's an integration tree that pulls various development branches of the kernel. See this (slightly older) writeup on the topic: https://lwn.net/Articles/289013/
