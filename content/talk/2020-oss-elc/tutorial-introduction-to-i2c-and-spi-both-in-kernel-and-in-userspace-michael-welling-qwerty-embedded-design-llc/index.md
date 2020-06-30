@@ -6,7 +6,7 @@ authors: [ "nathan-genetzky" ]
 # summary: ""
 # tags: []
 categories: [ "2020-oss-elc" ]
-date: 2020-06-30
+date: 2020-06-29
 featured: false
 draft: true
 
@@ -15,9 +15,9 @@ draft: true
 # location: ""
 # summary: ""
 # abstract: ""
-date: 2020-06-30
-date_end: 2020-06-30
-publishDate: "2020-06-30"
+date: 2020-06-29
+date_end: 2020-06-29
+publishDate: "2020-06-29"
 
 links:
 - name: Event
