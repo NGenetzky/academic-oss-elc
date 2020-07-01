@@ -303,3 +303,17 @@ It is the fifth RISC by Berkly
 - [meta-layers](https://gitlab.com/meta-layers/meta-multi-v7-ml-bsp/-/blob/dunfell/recipes-kernel/linux/patch/5.4.x/patches/all/0001-perf-Make-perf-able-to-build-with-latest-libbfd.patch)
 - guy writing a device tree manipulation tool on devicetree.org
   - [looper](https://github.com/devicetree-org/lopper)
+- [Long-Term Maintenance, or How to (Mis-)Manage Embedded Systems for 10+ Years](Long-Term Maintenance, or How to (Mis-)Manage Embedded Systems for 10+ Years)
+
+### asktheexperts - Kathy Giori
+
+- I have Ivan Kravets, CEO of https://platformio.org on his own company slack channel as my backup, in case your platformIO questions are over my head.
+  - https://www.zephyrproject.org/developing-zephyr-rtos-embedded-applications-on-platformio-and-simulating-on-antmicro-renode/
+- if you've heard of Scratch, MicroBlocks is being led by developer John Maloney, who built Scratch for the first decade...
+- and also Bernat Romagosa, a guru of FOSS projects for edu, including Snap! (snap.berkeley.edu).
+
+- I'll just wrap here with a few useful URLs:
+- [iot mozilla](https://iot.mozilla.org) - [tutorial(https://docs.google.com/document/d/1yR0UcwdvmhzFIOGS-9enoeSiKqHAFlGZY7AkYmiMcXo/edit#heading=h.1y4m2zfpf52f)
+- [platform](https://platform.org)
+- [microblocks](https://microblocks.fun)
+- [snap](https://snap.berkeley.edu)
