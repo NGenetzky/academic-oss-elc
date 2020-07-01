@@ -252,3 +252,46 @@ Future
 - `queue/*` branches in stable-rc tree
 - What is Linux-next tree?
   - It's an integration tree that pulls various development branches of the kernel. See this (slightly older) writeup on the topic: https://lwn.net/Articles/289013/
+
+## Wednesday
+
+### Wyliodrin STUDIO: From Prototyping to Small-scale Deployment
+
+- Ioana Culic, Teaching Assistant & Cosmin Daniel Radu, Teaching Assistant, Politehnica University of Bucharest
+- wryliodrin.studio
+
+> Prototyping is the first step in building any commercial or industrial IoT solution. As this process needs to be fast, various development tools especially developed for IoT prototyping have been implemented. Wyliodrin STUDIO is such a platform. It is an open source, easy to use IDE for the Internet of Things that enables remote control over embedded devices and fast deployment of simple applications.
+>
+> While a good prototyping tool, Wyliodrin STUDIO was designed as an educational tool to run simple applications on a limited number of devices.
+>
+> The purpose of this presentation is to give an overview of how we managed to expand Wyliodrin STUDIO so it covers the complete IoT development process. To achieve this, we have implemented container-based technologies so applications can be easily deployed and managed on clusters of devices. The result is an open source platform that can be used for both prototyping IoT projects and managing small-scale industrial deployments of applications.
+
+Wrliodrin Studio for Small Scale Deployment
+
+- Plugin Based
+
+- rpi
+- beaglebone
+- rapid IoT
+
+Wyliodrin STUDIO platforms
+
+- Desktop application
+- Web Application
+- JavaScriptApache 2.0 License
+
+### RISC-V
+
+ISA come and go
+
+- MIPS - open sources MIPS R6 ISA then closed it down
+- SPARC was opened by SUN
+- ARM
+
+It is the fifth RISC by Berkly
+
+- 1: 1981
+- 2: 1983
+- 3: 1984
+- 4: 1988:
+- 5:
