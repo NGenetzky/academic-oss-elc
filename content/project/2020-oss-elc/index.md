@@ -295,3 +295,11 @@ It is the fifth RISC by Berkly
 - 3: 1984
 - 4: 1988:
 - 5:
+
+### Yocto Project Channel
+
+- [DEALING WITH ANGULAR / NPM DEPENDENCIES ON EMBEDDED SYSTEMS - Savoir-faire Linux's Blog](https://blog.savoirfairelinux.com/en-ca/card/dealing-with-angular-npm-dependencies-on-embedded-systems/)
+- [meta-aws-demos](https://github.com/aws-samples/meta-aws-demos)
+- [meta-layers](https://gitlab.com/meta-layers/meta-multi-v7-ml-bsp/-/blob/dunfell/recipes-kernel/linux/patch/5.4.x/patches/all/0001-perf-Make-perf-able-to-build-with-latest-libbfd.patch)
+- guy writing a device tree manipulation tool on devicetree.org
+  - [looper](https://github.com/devicetree-org/lopper)
