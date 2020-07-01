@@ -317,3 +317,9 @@ It is the fifth RISC by Berkly
 - [platform](https://platform.org)
 - [microblocks](https://microblocks.fun)
 - [snap](https://snap.berkeley.edu)
+
+### Panel Discussion: What is Lacking in Linux Security and What Are or Should We be Doing about This
+
+- Elena Reshetova, Intel with Allison Marie Naaktgeboren, PhD Student; Alexander Popov, Positive Technologies; Mimi Zohar, IBM; Kees Cook, Google
+- KCONFIG hardened check
+- security features shouldn't be disabled by default. Users are unlikely to enable them.
