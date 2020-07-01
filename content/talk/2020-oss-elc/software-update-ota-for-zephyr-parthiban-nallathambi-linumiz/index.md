@@ -166,7 +166,7 @@ Each rollout has
 
 ### MCUmgr
 
- -Management library for Zephyr and mynewt
+- Management library for Zephyr and mynewt
 - OS and hwardware agnostic
 
 Layered modular design
