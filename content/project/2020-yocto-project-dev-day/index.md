@@ -37,11 +37,6 @@ links:
 # https://wiki.yoctoproject.org/wiki/images/f/f3/DD9_Devtool_NA20.pdf
 # https://wiki.yoctoproject.org/wiki/images/d/d7/DD10_Xen_Hypervisor_NA20.pdf
 
-# url_code: ""
-# url_pdf: ""
-# url_slides: ""
-# url_video: ""
-
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
@@ -140,7 +135,7 @@ Benefits of Scaling Out
 
 - developer machines can use central sstate cache
 - maintain download mirror
-  - license compliance 
+  - license compliance
   - protect if upstream sources disappear
 - reduce single points of failure
 
@@ -896,9 +891,12 @@ Xen patch series
 - yp-dev-day_virtualization
   - gitlab instance with CI
 
+### KVM Questions
+
 - Xen vs KVM
   - xen ~ vsphere, kvm ~ vmware/vmplayer
   - Xen is type 1, KVM is type 2
     - you boot a "type 1" first before booting anything else
 
-- A: we used cloud-init extensively in the meta-openstack days/layer
+- Q: Has anyone used "cloud-init" with Yocto build image?
+  - A: we used cloud-init extensively in the meta-openstack days/layer
