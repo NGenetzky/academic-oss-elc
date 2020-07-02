@@ -1,0 +1,131 @@
+################################################################################
+## gitattributes cheat-sheet
+
+### WHAT IS THIS FILE?
+# This file when recognized by a git client, will help enforce consistency
+# across multiple environments/systems in regards to line endings(CRLF & LF).
+# Documentation - `.gitattributes`: https://git-scm.com/docs/gitattributes
+
+# It provides fine-grained control in comparison to the `core.autocrlf` and
+# `core.eol` git settings that may vary per system, while the `.gitattributes`
+# file has a higher priority than `.gitconfig` and travels with the repository.
+# Documentation - `.gitconfig`: https://git-scm.com/docs/git-config
+
+
+### WHY SHOULD I CARE?
+# The desired result is to ensure the repo contains normalized LF line endings,
+# notably avoiding unhelpful noise in diffs or issues incurred from mixed line
+# endings. Storing as LF ensures no surprises for line endings during checkout.
+# Additionally for checkout to the local working directory, line endings can be
+# forced to CRLF or LF per file where appropriate, which ensures the files have
+# compatible line endings where software expects a specific kind.
+
+
+### ATTRIBUTES
+# `text` normalizes the file(s) line endings to LF upon add/commit. (CRLF -> LF)
+# `text=auto` sets `text` if Git decides the matched file is not binary data.
+
+# `eol` enforces a line ending for a file when writing to the working directory.
+# `core.autocrlf` when set to `true` or `input` overrides the `core.eol` value.
+# `core.eol` is used for any files not explicitly set with an `eol` attr value.
+# `core.eol` uses the native line endings for your platform by default.
+
+# `binary` is an alias for `-text -diff`. The file won't be normalized(-text).
+# `-diff` indicates not to show a diff. Useful when diffs are not likely to be
+# meaningful such as generated content (SVG, Source Maps, Lockfiles).
+
+# `export-ignore` excludes matched files and directories during `git archive`,
+# which services like Github use to create releases of a project with.
+
+## gitattributes cheat-sheet
+################################################################################
+
+################################################################################
+## gitattributes cheat-sheet
+
+# Normalize all non-binary files line endings to LF upon `git add`/`git commit.`
+* text=auto
+
+.gitattributes     text export-ignore
+.gitignore         text export-ignore
+
+## Text
+.editorconfig      text
+.eslintrc          text
+.stylelintrc       text
+.babelrc           text
+.env               text
+*.json             text
+*.yaml             text
+*.md               text
+.dockerignore      text
+Dockerfile         text
+
+## OS/EOL Specific
+*.bat              text eol=crlf
+*.sh               text eol=lf
+
+## Text, but Diffs are less meaningful, so ignore them.
+*.lock             text -diff
+*.svg              text -diff
+
+## GRAPHICS
+*.pdf              binary
+*.png              binary
+*.gif              binary
+*.jpg              binary
+*.jpeg             binary
+*.webp             binary
+*.ico              binary
+
+## VIDEO
+*.webm             binary
+
+## gitattributes cheat-sheet
+################################################################################
+
+################################################################################
+## git-annex
+
+# datalad
+* annex.backend=MD5E
+**/.git* annex.largefiles=nothing
+
+# base
+* annex.largefiles=((mimeencoding=binary)or(largerthan=500kb))
+
+# Database
+*.db annex.largefiles=anything
+*.sqlite annex.largefiles=anything
+
+# Extra Media - annex
+*.png annex.largefiles=anything
+*.jpg annex.largefiles=anything
+*.jpeg annex.largefiles=anything
+
+# Extra Media - git
+*.nfo annex.largefiles=nothing
+*.srt annex.largefiles=nothing
+*.sub annex.largefiles=nothing
+*.txt annex.largefiles=nothing
+*.sfv annex.largefiles=nothing
+
+# Media - annex
+*.mp4 annex.largefiles=anything
+*.avi annex.largefiles=anything
+*.m4v annex.largefiles=anything
+*.mkv annex.largefiles=anything
+*.mp4 annex.largefiles=anything
+*.mpg annex.largefiles=anything
+*.rar annex.largefiles=anything
+*.rtf annex.largefiles=anything
+*.wmv annex.largefiles=anything
+
+# Checksums
+*.md5sum annex.largefiles=nothing
+*.sha256sum annex.largefiles=nothing
+
+## git-annex
+################################################################################
+
+**/.git* annex.largefiles=nothing
