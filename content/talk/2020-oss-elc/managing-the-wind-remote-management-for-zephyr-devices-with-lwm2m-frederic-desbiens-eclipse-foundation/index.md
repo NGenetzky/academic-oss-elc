@@ -25,6 +25,8 @@ links:
   url: https://ossna2020.sched.com/event/c3X0/managing-the-wind-remote-management-for-zephyr-devices-with-lwm2m-frederic-desbiens-eclipse-foundation
 - name: Slides
   url: https://static.sched.com/hosted_files/ossna2020/b5/2020.06%20-%20fdesbiens%20-%20Managing%20the%20Wind%20-%20Zephyr%20and%20LwM2M.pdf
+- name: Wiki
+  url: https://wiki.yoctoproject.org/wiki/YP_DevDay_Austin_2020
 
 # image:
 #   caption: ""
