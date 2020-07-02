@@ -798,3 +798,107 @@ sudo runqemu nographic serial
 $ devtool deploy-target nano root@192.168.7.2
 ```
 
+## Xen
+
+### Overview
+
+- Dom0 + Control Domain
+  - Platform stuff
+- App VMS
+  - Windows VM
+  - Linux VM
+
+Xen hypervisor contains
+
+- Scheduler
+- Memory Mgmt
+- XSM Access Control
+
+- author works for open xt
+
+### bitbaking Xen for RPI4
+
+layers
+
+- xen support in meta-virtualization
+- rpi 4 suport in meta-raspberrypi
+- poky with meta-openembedded
+- https://lists.yoctoproject.org/g/meta-virtualization/message/5495
+
+conf
+
+```python
+MACHINE=”raspberrypi4-64"
+DISTRO_FEATURES_append = " virtualization xen";
+QEMU_TARGETS = "i386 x86_64 aarch64 arm"
+```
+
+build
+
+```sh
+bitbake xen-image-minimal
+```
+
+### RPI4 Boot and verify xen
+
+xl list
+Testing basic Xen functionality at the console:
+
+```sh
+# list running VMs
+xl list
+# show data about the current hypervisor
+xl info
+# examine Linux’s Xen device nodes
+ls -l /dev/xen
+# read the contents of the XenStore tree
+xenstore-ls
+# see the Linux kernel messages relating to Xen
+dmesg | grep Xen
+# see the Xen boot messages
+xl dmesg
+```
+
+Xen patch series
+
+- "dynamic layer" for settings taht are specific to Xen-on-rpi4
+
+### Xen beyond Pi
+
+- Intel x86-64
+  - wic tool integration
+  - simple production of bootable
+  - `wic create directdisk-xen -e xen-image-minimal`
+- Can run inside of runqemu!
+
+### Xen Questions
+
+- Q: What does "directdisk" refer to when it comes to images? How does this differ from the other IMAGE_FS_TYPES?
+  - will create image suitable for booting x86-64 type of image.
+
+## KVM
+
+- packagegroup-kvm-host
+  - qemu, libvirt, libvirtd, virsh
+- kvm-binary-image-vessel-package
+  - "vessel" is avoiding the overloaded meaning of "container"
+  - `inherit bin_package`
+
+### future work
+
+- secure boot
+- virsh (use a tempalte to create XML)
+- Launch script to auto boot the guest
+- Insert ssh keys into guest
+
+- Acorn is another type 1 hypervisor
+
+- yp-dev-day_virtualization
+  - gitlab instance with CI
+
+- Xen vs KVM
+  - xen ~ vsphere, kvm ~ vmware/vmplayer
+  - Xen is type 1, KVM is type 2
+    - you boot a "type 1" first before booting anything else
+
+- A: we used cloud-init extensively in the meta-openstack days/layer
