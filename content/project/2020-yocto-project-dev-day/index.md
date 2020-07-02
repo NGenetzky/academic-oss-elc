@@ -486,3 +486,75 @@ meta-security – Compliance
 - Updater layers – meta-mender
 - Updater layers – meta-updater
 - meta-sca - Collection of static analysis tools maintained by Konrad Weihmann
+
+## Khem, “Techniques and tools to reduce image size with Yocto Projects"
+
+### Wrigel the Third
+
+- Docker, DockerSwam
+- Designed for easy setup of small cluters
+- internal build and in AWS
+- https://github.com/WindRiver-OpenSourceLabs/ci-scripts
+
+WR setup tool and git-repo
+
+- git-repo manages large tree of repos
+- manifest generation by setup tool
+- git repo detects changes across entire tree
+- automatic rebase of local commits when syncing
+- con: fork with support for bare repos
+
+setup tool and layerindex
+
+- dicovery and depenendecy management
+- bitbake-layers layerindex-fetch is based on some of that
+
+### Developer builds
+
+- repo detects commits
+- fork repos and store commits on git server
+- containerized layerindex uses forks
+- recreate local buildarea on buildsystem
+
+- CONTAINERIZE layerindex???
+
+- start_devbuild.sh
+
+### Build Failure Login
+
+- developer can't reproduce build failure on build server
+- save docker container startup command
+- create temp ssh key, upload build server
+- add authorize key entry to run docker on login
+- build environment perfectly recreated
+- cleanup key
+- workspace_login.sh
+
+- https://lava.ciplatform.org/
+
+### Summary
+
+- expose large compuse to developers
+- build and test patches before commit
+- build failures inspection
+- integration with runtime testing
+
+### Demo
+
+- OERuntimeTestCase
+- searching layers in devbuild for local commits
+
+- yocto autobuilder helper scripts
+- awe to scale builds
+- k8s and tekton
+- yocto self-hosted AMIs
+
+- spot instances are a great deal
+
+### Questions
+
+- try to prefer docker volumes.
+- host path can be performant
+
+- Add tmpfs at the common tmp locations. Some recipes misbehave.
+- you can do docker run and verify that nothing in overlay has changed.
