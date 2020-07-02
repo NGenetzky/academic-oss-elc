@@ -22,6 +22,8 @@ links:
 - name: Event
   url: https://www.yoctoproject.org/yocto-project-dev-day-virtual-north-america-2020/
 
+# https://wiki.yoctoproject.org/wiki/images/e/e4/DD3_Kernel_Lab_NA20.pptx
+
 # url_code: ""
 # url_pdf: ""
 # url_slides: ""
@@ -69,3 +71,256 @@ links:
  4:00	30	Paul Eggelton, "DevTool"
  4:30	30	Christopher Clark & TimO, "Virtualization"
 ```
+
+## Highly scalable build automation
+
+### Solutions
+
+Solutions?
+
+- Buildbot
+- GitLab CI
+- Jenkins
+
+Design
+
+- ideally CI should run a single comamnd
+- Ensure you can run the same scrip tlocally
+- allo manual build and release manually if your CI system breaks
+
+Pulling in other layers
+
+- git submodule
+- repo
+- oe-layersetup
+- kas
+
+examin simple setup
+
+Build environment
+sstate cahce
+download cache
+artifact storage
+log storage management interface
+
+ Scaling up
+
+- bigger build machine
+- NVMe > SATA SSD > SATA HDD
+- Verify write edurance on SSD
+- Server/Workstation Hardware
+
+CPU and RAM
+
+- Don't blinly assume more expenseive is better
+- check for single threaded bottlenecks
+  - if they dominate go for high clock
+  - otherwise go for high core count
+- profile RAM usage
+
+Tips
+
+- dedicated machine not VM
+- if you use docker make sure you look into settings
+
+Benefits of Scaling Out
+
+- developer machines can use central sstate cache
+- maintain download mirror
+  - license compliance 
+  - protect if upstream sources disappear
+- reduce single points of failure
+
+Local Scale Out
+
+- High speed networking
+  - 10Gbps between build machines and NAS
+
+Global Scale Out
+
+- issues
+  - Limited network speeds
+  - Packet drops and errors will happen
+  - may see errors accessing the cache
+- server caches over https
+- update cache over SSH or an API
+
+Distributed Cache and Aritacts Storage
+
+- Build your own storage cluster
+  - Ceph, Gluster, etc
+  - Minio is also an option with S3 compatbile API
+
+### A low cost example
+
+- meta-sancloud bsp layer
+
+high level design
+
+- GItlab  CI
+- BackBlaze B2
+- CloudFlare eliminate bandwidth costs
+
+kas
+
+- desrived in yaml
+
+gitlab-ci
+
+Build agend
+
+- Ryzen 7 3700X
+- 64GB DDR4 EEC
+- 2x 1TB NVMe drives in RAID1 pair
+
+GitLab Runner configuration
+
+- gitlab runner has very min configuration
+- limit concurrent jobs
+- select the docker job executor
+- register with gitlab ci
+
+docker
+
+- mostly use crops/yocto
+- sometimes custom 
+
+BackBlaze2
+
+- No upload cost
+- cost for download
+
+CloudFlare
+
+- downloads from BackBlaze via CloudClare are free
+- dedicated domain
+- make sure you disable browser integrity check
+
+Uploading
+
+- use rclone
+- API key stored in gitlab-ci
+
+MOnnthly
+
+- Build Agents about $60 per month
+- BackBlaze B2 approx $2 per month
+- no long te4rm commitments
+
+- Bitbake inc files
+  - sstate
+  - download mirro
+- gitlab-ci
+- kas config
+  - kas poky
+  - kas argo
+
+Summary
+
+- requires some sysadmin work in setup and maintenance
+
+## 2
+
+1. mosquitto - mqtt browker
+2. telegraf - colect analyze
+3. influxdb
+4. Grafana
+
+mTIG Set ups
+
+- mTIG Stack - "classic"
+- mTIG Stack - "vms"
+- mTIG Stack - "containers" - microservices
+- mTIG Stack - "docker-compose"
+
+Showed Dockerfile for mosquitto
+
+- volumes for host storage
+- expose for port acces
+
+yoctozing the setup!
+
+- populate sdk
+
+- building packages from source
+  - time consuming task
+  - normally glang magically pulls in required dependencies
+  - depency hell
+
+prebuilt binaries
+
+- influxdb-prebuilt
+- this was easier
+- but
+  - prebuilt binaries are packaged differently
+  - how reproducable is this? not at all
+
+package summary
+
+- additional work is  required
+- image recipe - easy
+- mosquitto - easy recipe upstream
+- influxdb
+- telegraph
+
+Yocto Person - get docker packages on the target
+
+- add packages
+- configure kernel
+
+Docker on the Target
+
+bitbaking from sources seems to be hard
+prebuilt containers for the target
+need docker and friends
+
+docker architecture
+
+Start it up
+
+- docker-compose up
+  - same as before
+
+#### Put it all together
+
+- container standardization
+
+app-container-image-influxdb-prebuilt-oci
+
+- we need minimal rootfs without kernel and meta-virtualization
+- skopeo in host container or host machine
+- app-container-image-oci.bb
+- IMAGE_FSTYPE 'oci' from meta-virtualization
+- IMAGE_CONTAINER_NO_DUMMY = "0" -> no kernel
+
+Building container images with OE and Yocto Project Scott Murry 2018
+
+## Kernel
+
+- upstream linux
+- linux-stable
+- vendor kernel
+- eveil vendor kernel (fraken-kernel)
+
+- Install kernel, dtb
+- installed is highly board specific
+
+### Kernel Workflow multiple users
+
+- tewaking a kernel/config or writing a kernel module using an existing BSP
+- board bring-up (creating a BSP)
+
+Kernel Workflow TODO existin BSP chang kernel
+
+- many kernels
+- linux-yocto plus tolling to use your own
+- linux-yocto has variants
+  - -dev, - -tiny, -rt
+
+new BSP
+
+- obtain kernel
+- setup cross toolchain - set the processor TUNE
+- configure kernel and tweak DT . lots of yocto tooling
+- install kernel modules DTB
+
