@@ -653,3 +653,148 @@ Build history analysis
 
 - installed-package-sizes.txt
 - dot files for dependencies between packages
+
+## Slack Channel
+
+- https://elinux.org/images/8/8f/Poky-tiny_and_Beyond.pdf
+
+## User Space, HANDS ON
+
+### Packing QA
+
+- packages-list
+  - same package multiple times
+- installed-vs-shipped
+- already-stripped
+- ldflags - ELF binary has symbols but no GNU_HASH
+
+### Questions
+
+- Q: What is the "BACKFILL_CONSIDERED" mean?
+  - if any packages says it needs `sysvint` then you should just ignore it
+  - It's features that were on by default (usually implictly because there was no knob), so you are acknowledging that "considered" you want it off (at least thats my interpretation)
+  - Bascially, it was non-configurable, then it became a knob, but they had to default it to "on" to maintain backward compatability
+  - https://www.yoctoproject.org/docs/current/mega-manual/mega-manual.html#ref-features-backfill
+
+## DevTool
+
+### devtool – past presentations
+
+- Using Devtool To Streamline Your Yocto Project Workflow - Tim Orling
+  - https://www.youtube.com/watch?v=CiD7rB35CRE
+- Yocto Project Extensible SDK: Simplifying the Workflow for Application Developers - Henry Bruce
+  - https://www.youtube.com/watch?v=d3xanDJuXRA&t=57s
+
+### Why devtool exists?
+
+- working with sources as hard
+  - tempting to just edit sources under tmp
+  - painful (forced builds, mannual patch generations, lost work)
+
+### Devtool has two modes
+
+each has slight differences. It's the only interfaces for eSDK.
+
+eSDK mode
+
+- add
+- build
+- build-image
+- build-sdk
+- configure-help
+- check-upgrade-status
+- deploy-target
+- edit-recipe
+- export
+- extract
+- find-recipe
+- finish
+- import
+- latest-version
+- menuconfig
+- modify
+- package
+- rename
+- reset
+- runqemu
+- sdk-install
+- sdk-update
+- search
+- status
+- sync
+- undeploy-target
+- update-recipe
+- upgrade
+
+bitbake mode
+
+- add
+- build
+- build-image
+- configure-help
+- check-upgrade-status
+- create-workspace
+- deploy-target
+- edit-recipe
+- export
+- extract
+- find-recipe
+- finish
+- import
+- latest-version
+- menuconfig
+- modify
+- rename
+- reset
+- search
+- status
+- sync
+- undeploy-target
+- update-recipe
+- upgrade
+
+### More on devtool
+
+Devtool multiple targets
+
+- specify target’s IP with un/deploy-target
+
+### recipetool
+
+- extra set of tools for working on recipes
+- logic for creating recipes (used by devtool add)
+- can also create update bbapends, programmactically set variables in recipes, etc
+
+### Future
+
+- multiconfig support
+- recipe modification fixes
+- smart recipetool
+
+### Lab
+
+```
+Host qemu
+  User root
+  Hostname localhost
+  Port 2222
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+```
+
+### sidebar – SLIRP versus TUN/TAP
+
+- SLIRP: advantage is no root access required, disadvantages are minimal documentation,
+requires SSH knowledge
+- TAP : advantage is simpler setup, disadvantage is that it requires sudo access
+
+```sh
+# SLIRP
+runqemu slirp nographic serial
+devtool deploy-target nano qemu
+
+# TAP
+sudo runqemu nographic serial
+$ devtool deploy-target nano root@192.168.7.2
+```
+
