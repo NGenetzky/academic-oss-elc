@@ -369,3 +369,120 @@ Kernel Metadata - storage
   - meta-xilinx
 - example of just using *.cfg without *.scc
   - meta-raspberrypi
+
+## Security Hardening
+
+### Intro
+
+Agenda
+
+- Security Hardening?
+- Basic hardening with OE/YP
+- meta-security
+- meta-selinux
+- Updater layers
+- meta-sca
+
+- not an expert
+
+Security Hardening?
+
+- Securing a system by reducing its attack surface
+- Remove unnecessary software/services, users
+- Control network access, e.g. firewall
+- Intrusion detection
+- Remove/improve default passwords/users
+- Updates to remove vulnerabilities
+- etc.
+
+### Why
+
+Attackers are becoming more aware of Linux devices
+
+- Scans of all of IPv4 are a thing, e.g. shodan.io
+- Customers cannot be relied upon to not attach devices directly to the Internet
+- uPnP may make device services visible unexpectedly
+
+During ELC there were good discussions
+
+Some presentations this week with more detailed discussion
+
+- "Introduction to Embedded Linux Security" - Sergio Prado, Embedded
+Labworks
+- https://ossna2020.sched.com/event/c3XR/introduction-to-embedded-linux-security-sergio-prado-embedded-labworks#
+- "IoT Developer's Guide to Building Secure IoT Devices" - Yogesh Ojha, Tata Consultancy Services
+- https://ossna2020.sched.com/event/c3Tl/iot-developers-guide-to-building-secure-iot-devices-yogesh-ojha-tata-consultancy-services#
+
+### OWASP vunerability list
+
+### OE/YP Hardening
+
+- Read the Fine Manual
+- https://www.yoctoproject.org/docs/3.1.1/dev- manual/dev-manual.html#making-images-more-secure
+- Provides some useful high-level guidelines
+- Has some more detailed guidance around disabling debug features, adding users and passwords, and security related compile flags
+- Mentions meta-security and meta-selinux
+- Useful, but mostly a starting point
+
+### Expanding on the FM
+
+- oe-pkgdata-util useful for finding what package files come from
+
+Review kernel configuration
+- Security options, but also things like hardware RNG, architecture specific address space randomization
+- Some more ideas
+in https://www.whonix.org/wiki/Hardened-kernel
+- Make sure CONFIG_DEVMEM is disabled if at all possible
+- Typically used to access device registers as a workaround
+- Somewhat better now with default values of STRICT_DEVMEM and IO_STRICT_DEVMEM, but using/fixing drivers and disabling is safer
+
+It's common for BSP layers to not enable desired features...
+
+- e.g. cgroup, namespace, netfilter, BPF support
+- These become more visible when using systemd or container runtimes
+- ...and to enable a lot of things you do not need
+- Usually err on the side of enabling a lot of driver subsystems and drivers
+- May enable DEBUG options that are problematic
+
+- ROOTFS_READ_ONLY feature is worth considering
+  - Increase difficulty for attackers
+  - Secondary benefit of also being useful for implementing reset to factory default schemes
+- May require development effort
+  - Locally developed applications, or packages from outside oe-core may not work out of the box
+  - Combining with MAC schemes such as SELinux will require some work (as labelling is done on boot)
+
+### meta-security
+
+- cve-check.bbclass
+- SRTool (https://wiki.yoctoproject.org/wiki/SRTool_User_Page) may be useful if you need to set up an issue tracker
+
+meta-security – Compliance
+
+- Recipes in meta-security-compliance layer
+- Lynis (https://cisofy.com/lynis) runtime system auditor
+- OpenSCAP (https://www.open-scap.org)
+  - Implementation of Security Content Automation Protocol
+  - In simple terms, a specification of standardized naming for interaction with tools and databases
+  - oscap and oscap-daemon tools for checking NIST or other databases for vulnerabilities
+- These seem likely to be overkill in a lot of embedded usecases
+- But perhaps still useful in a QA role
+
+- meta-security – Runtime Scanners
+
+### meta-selinux
+
+### meta-sca
+
+- https://github.com/priv-kweihmann/meta-sca
+- Collection of static analysis tools maintained by Konrad Weihmann
+- Static analysis for C, C++, python, etc.
+- Classes to enable per package or per image scanning (some limits depending on specific tools)
+- Significant documentation
+- Actively maintained
+
+### Summary
+
+- Updater layers – meta-swupdate
+- Updater layers – meta-mender
+- Updater layers – meta-updater
+- meta-sca - Collection of static analysis tools maintained by Konrad Weihmann
