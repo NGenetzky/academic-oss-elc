@@ -487,7 +487,7 @@ meta-security – Compliance
 - Updater layers – meta-updater
 - meta-sca - Collection of static analysis tools maintained by Konrad Weihmann
 
-## Khem, “Techniques and tools to reduce image size with Yocto Projects"
+## CI/CD
 
 ### Wrigel the Third
 
@@ -558,3 +558,98 @@ setup tool and layerindex
 
 - Add tmpfs at the common tmp locations. Some recipes misbehave.
 - you can do docker run and verify that nothing in overlay has changed.
+
+## Techniques and tools to reduce image size with Yocto Projects
+
+Agenda
+
+- Introduction
+- "poky-tiny” Distribution
+- Image analysis tools
+- Compiler and toolchain optimizations
+- C/C++ this time
+- package refactoring
+- Package selection
+
+### Introduction
+
+Reference Distrubtions
+
+- poky-tiny
+  - small size
+  - musl
+  - linux-yocto-tiny
+  - mdev
+  - custom init
+- poky-altconfig
+  - systemd
+  - LTSI kernel
+
+### "poky-tiny” Distribution
+
+- start small and then add
+- much harder to remove things, often due to dependencies
+
+Packages
+
+- musl C Library
+  - IMAGESIZE = 37668 -> 35532
+  - this requires changes in application
+  - changes interface to linux kernel
+- busybox init system
+  - IMAGESIZE = 35532 -> 3120
+- mdev over udev
+
+### Image analysis tools
+
+### Compiler and toolchain optimizations
+
+#### Compiler Flags
+
+- SELECTED_OPTIMIZATION
+
+```python
+TARGET_CFLAGS = "${TARGET_CPPFLAGS} ${SELECTED_OPTIMIZATION}"
+
+…
+
+DEBUG_FLAGS ?= "-g -feliminate-unused-debug-types ${DEBUG_PREFIX_MAP}"
+
+# Disabled until the option works properly -feliminate-dwarf2-dups
+FULL_OPTIMIZATION = "-O2 -pipe ${DEBUG_FLAGS}"
+DEBUG_OPTIMIZATION = "-Og ${DEBUG_FLAGS} -pipe"
+SELECTED_OPTIMIZATION = "${@d.getVar(oe.utils.vartrue('DEBUG_BUILD', 'DEBUG_OPTIMIZATION', 'FULL_OPTIMIZATION', d))}"
+```
+
+#### LTO
+
+- `flto`
+- clang support
+  - thin LTO
+  - full LTO
+  - needs gold linker
+
+### Package selection
+
+#### Buildhistory
+
+```python
+USER_CLASSES ?= " buildhistory”
+BUILDHISTORY_COMMIT ?= "1"
+```
+
+#### Refine Image
+
+- IMAGE_LINGUAS
+- “en-us”
+- Use “as needed”, prefer empty
+- IMAGE_FEATURES
+- Remove package-management
+- Remove splash
+- SSH – Use dropbear instead of OpenSSH
+- Add ssh-server-dropbear to IMAGE_FEATURES
+
+Build history analysis
+
+- installed-package-sizes.txt
+- dot files for dependencies between packages
