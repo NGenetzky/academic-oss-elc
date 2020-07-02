@@ -22,7 +22,20 @@ links:
 - name: Event
   url: https://www.yoctoproject.org/yocto-project-dev-day-virtual-north-america-2020/
 
+# https://wiki.yoctoproject.org/wiki/images/8/8e/DD0_Introduction_NA20.pdf
+# https://wiki.yoctoproject.org/wiki/images/d/da/DD0_Introduction_NA20.pptx
+# https://wiki.yoctoproject.org/wiki/images/0/02/DD1_Highly_Scalable_Build_Automation_NA20.pdf
+# https://wiki.yoctoproject.org/wiki/images/a/a9/DD1_Highly_Scalable_Build_Automation_NA20.pptx
+# https://wiki.yoctoproject.org/wiki/images/3/38/DD2_YoctoContainer-handout_NA20.pdf
+# https://wiki.yoctoproject.org/wiki/images/d/d7/DD3_Kernel_Lab_NA20.pdf
 # https://wiki.yoctoproject.org/wiki/images/e/e4/DD3_Kernel_Lab_NA20.pptx
+# https://wiki.yoctoproject.org/wiki/images/0/0d/DD5_Security_Hardening_NA20.pdf
+# https://wiki.yoctoproject.org/wiki/images/8/8a/DD6_Size-Optimizations_NA20.pptx
+# https://wiki.yoctoproject.org/wiki/images/3/3d/DD7_CI_CD_NA20.pptx
+# https://wiki.yoctoproject.org/wiki/images/2/2e/DD8_Userspace_Lab_NA20.pptx
+# https://wiki.yoctoproject.org/wiki/images/c/c7/DD9_Devtool_NA20.odp
+# https://wiki.yoctoproject.org/wiki/images/f/f3/DD9_Devtool_NA20.pdf
+# https://wiki.yoctoproject.org/wiki/images/d/d7/DD10_Xen_Hypervisor_NA20.pdf
 
 # url_code: ""
 # url_pdf: ""
@@ -324,3 +337,35 @@ new BSP
 - configure kernel and tweak DT . lots of yocto tooling
 - install kernel modules DTB
 
+### Kernel metadata
+
+config fragment
+
+- hands on we use devtool
+- `devtool` or `-c menuconfig` `-c diffconfig`
+- filename has cfg ext
+
+SCC
+
+- series configuration control
+- ties together config framgent or patches with extra metadata
+
+Kernel Metadata - storage
+
+- two places to store
+  - in-tree
+  - in separate repository
+- regardless add the lcoation of metadata to your SRC_URI.
+  - Make sure to specify "type=kmeta"
+
+- its much more sophisticated
+- can define other kernel types `KTYPE` and have featured enabled based on kernel type (`-tiny,-dev,-rt`)
+  - scc files can include other scc files
+  - can restrict the includes of other scc
+
+- examples of in-tree kmeta:
+  - meta-odroid
+  - meta-arm
+  - meta-xilinx
+- example of just using *.cfg without *.scc
+  - meta-raspberrypi
