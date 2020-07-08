@@ -1,13 +1,14 @@
 +++
-# A Recent and Upcoming Talks section created with the Pages widget.
-# This section displays recent talks from `content/talk/`.
+# A Featured Publications section created with the Featured Content widget.
+# This section displays publications from `content/publication/` which have
+# `featured = true` in their front matter.
 
-widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "featured"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 70  # Order that this section will appear.
+weight = 50  # Order that this section will appear.
 
-title = "Talks from 2020 OSS ELC"
+title = "Featured Talks from 2020 OSS ELC"
 subtitle = ""
 
 [content]
@@ -17,9 +18,6 @@ subtitle = ""
   # Choose how much pages you would like to display (0 = all pages)
   count = 0
 
-  # Choose how many pages you would like to offset by
-  offset = 0
-
   # Page order. Descending (desc) or ascending (asc) date.
   order = "desc"
 
@@ -28,9 +26,6 @@ subtitle = ""
     tag = ""
     category = "2020-oss-elc"
     publication_type = ""
-    exclude_featured = true
-    exclude_past = false
-    exclude_future = false
 
 [design]
   # Toggle between the various page layout types.
@@ -38,7 +33,7 @@ subtitle = ""
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 1
+  view = 3
 
 [design.background]
   # Apply a background color, gradient, or image.
