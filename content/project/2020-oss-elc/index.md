@@ -161,7 +161,6 @@ Future
 - Automotive people use OSTree
   - the beauty with OSTree is that you even store delta, basically. In pratice you typically can afford to have A+B+C+...+recovery
 
-
 ### Ftrace preempt RT
 
 > Welcome Everyone @here to the Ask the Expert Session with Steven Rostedt, Open Source Engineer, VMware!
@@ -169,14 +168,13 @@ Future
 > Ask Steven about tracing, real-time, or anything else that has to do with Linux kernel development.
 
 - Q: What are the top userspace tools for interfacing with Ftrace? Do you use those kinds of tools frequently?
-  - https://osselc.slack.com/archives/C0140RTKZ71/p1593455023040800
+  - [slack](https://osselc.slack.com/archives/C0140RTKZ71/p1593455023040800)
   - A: Are trace-cmd and kernelshark the way to go to use ftrace ?
   - A: Yes! I think you answered that question for me :slightly_smiling_face:  And kernelshark 2.0 will be out soon that will have a lot more visualization features! And trace-cmd will hopefully turn into a library as well to let other tools access ftrace.
 
-- Q: I am trying to troubleshoot an issue with SLOB, there is a lot of traffic there, but I want to track allocations/deallocations and modification of slob/kmemcache objects. my q is - what is the best way to do it for a busy piece of code? and how do you track modification of an object and not just allocations/deallocations, and if you do it with printk - where and how to save all those millions of printk messages so that i can go back in history and review the lifecycle of any particular slob/kmemcache object? 
-  - https://osselc.slack.com/archives/C0140RTKZ71/p1593455349057500
+- Q: I am trying to troubleshoot an issue with SLOB, there is a lot of traffic there, but I want to track allocations/deallocations and modification of slob/kmemcache objects. my q is - what is the best way to do it for a busy piece of code? and how do you track modification of an object and not just allocations/deallocations, and if you do it with printk - where and how to save all those millions of printk messages so that i can go back in history and review the lifecycle of any particular slob/kmemcache object?
+  - [slack](https://osselc.slack.com/archives/C0140RTKZ71/p1593455349057500)
   - Use trace_printk() which writes into the tracing buffer. Use trace-cmd record to capture that data live into a file and examine it offline later. Use -b option to increase the size of the per cpu buffers (it's in 1K increments, 1000 is 1M).
-
 
 ### Sandbox
 
@@ -185,3 +183,72 @@ Future
 > The only disadvantage - to utilise this framework, application developers have to explicitly add sandboxing code to their projects and developers usually either delay this or omit completely as their main focus is mostly on the functionality of the code rather than security. Moreover, seccomp security model is based around system calls, but many developers, writing their code in high-level programming languages and frameworks, either have little knowledge to no experience with syscalls or just don’t have easy to use seccomp abstractions or libraries for their frameworks.
 >
 > All this makes seccomp not that widely adopted, but what if there was a way to easily sandbox any application in any programming language without writing a single line of code? This presentation discusses potential approaches and their pros and cons. 
+
+## Tuesday
+
+### Yocto Channel
+
+- https://www.yoctoproject.org/yocto-project-dev-day-virtual-north-america-2020/
+
+#### how to ensure you always reuse SSTATE AND DL_DIR from populate sdk
+
+> Robert Berger (ReliableEmbeddedSystems)  11:09 AM
+> `bitbake core-image-minimal`
+> 11:10
+> `bitbake core-image-minimal -c populate_sdk`
+> 11:10
+> if you do this from the same shell DL_DIR and SSTATE will be reused anyways
+> 11:10
+> `-c populate_sdk_ext` for extensible SDK
+
+#### oci containers
+
+- Yocto dev day talk about microservices and containers
+- my examples from my previous talks are in https://github.com/konsulko/meta-container-demo
+- https://github.com/containers/storage/tree/master/docs
+- meta-virt
+
+#### Drew Fustini Linux on RISV-V
+
+- https://hackaday.com/2020/06/05/lattice-semiconductor-targets-bitstream-reverse-engineering-in-latest-propel-sdk-license/#div-comment-6251902
+- https://www.crowdsupply.com/microchip/polarfire-soc-icicle-kit
+
+## Embedded linux channel
+
+### container_of
+
+> Brandon Streiff  12:26 PM
+> Fun piece of trivia: container_of isn't exclusive to Linux; the Windows DDK has it too, though they call it CONTAINING_RECORD and it has nowhere near as many type-safety checks as it does on Linux.
+
+#### RiSC V
+
+- risvc quickstart
+  - riscv on QEMU
+    - might be better for #2-track-riscv  but a simple way to get started is QEMU https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html
+    - https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html
+  - or Renode https://renode.readthedocs.io/en/latest/introduction/supported-boards.html
+
+### Linux Tracing
+
+- Linux tracing systems
+  - https://files.slack.com/files-pri/T015512GB8Q-F016BD92TQT/tracers.jpeg
+  - Here’s the same tracing ecosystem image, but color flattened for easier printing
+    - https://osselc.slack.com/files/U015W0X6RKK/F016B8M56EN/linux_tracing_systems.pdf?origin_team=T015512GB8Q&origin_channel=C014FHZSLRY
+
+- RE: dm-crypt Q in the Secure Boot session: Take a look at dm-crypt performance article https://blog.cloudflare.com/speeding-up-linux-disk-encryption/
+
+### Kernel stable talk
+
+- https://ossna2020.sched.com/event/c3Rm/safeguards-in-the-stable-kernel-process-sasha-levin-microsoft
+
+> There is a common misconception that while Linus's tree is heavily tested and validated, the Stable and LTS trees aren't reviewed or tested at all. This talk aims to change this misconception.
+>
+> In reality, Stable trees are not only heavily tested, but the testing they are being subjected to is much more similar to "real world" workloads that the kernel will have to endure once it's released.
+>
+> We will go over every step a patch goes from the point it's sent to the mailing list, to after it was included in a stable tree, highlighting the process which makes it very difficult to introduce bugs into the Stable trees. 
+
+- AUTOSEL
+  - [Machine learning and stable kernels](https://lwn.net/Articles/764647/)
+- `queue/*` branches in stable-rc tree
+- What is Linux-next tree?
+  - It's an integration tree that pulls various development branches of the kernel. See this (slightly older) writeup on the topic: https://lwn.net/Articles/289013/
