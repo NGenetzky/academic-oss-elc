@@ -323,3 +323,12 @@ It is the fifth RISC by Berkly
 - Elena Reshetova, Intel with Allison Marie Naaktgeboren, PhD Student; Alexander Popov, Positive Technologies; Mimi Zohar, IBM; Kees Cook, Google
 - KCONFIG hardened check
 - security features shouldn't be disabled by default. Users are unlikely to enable them.
+
+## Embedded Linux talk
+
+CAN and OBD
+
+- re: isotp, it is needed for the usual diagnostic data (UDS).  We are building the module in our beagle kernel for Macchina (a CAN adapter cape)
+  - https://www.macchina.cc/catalog/p1-boards/p1-under-dash
+
+- I did a really small demo, so didn't have too strict requirements for the library. I used this uds-c (https://github.com/openxc/uds-c), it was not without deficiencies as I remember, so I had to do some modifications (embarrassingly abandoned), so you might also need too.
