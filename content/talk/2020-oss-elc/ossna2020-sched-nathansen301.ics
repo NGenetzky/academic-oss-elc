@@ -1,0 +1,405 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+X-WR-CALNAME:ossna2020 (nathansen301)
+X-WR-CALDESC:Event Calendar
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//Sched.com Open Source Summit + ELC North America 2020//EN
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+DTSTART:20200629T133000Z
+DTEND:20200629T143000Z
+SUMMARY:Sponsor Showcase
+DESCRIPTION:
+CATEGORIES:SPONSOR SHOWCASE HOURS & BREAKS
+LOCATION:Sponsor Exhibit Area\, Virtual 
+SEQUENCE:0
+UID:7178e6c34e82f0cff27ee306cdf7edd2@nathansen301
+URL:http://ossna2020.sched.com/event/7178e6c34e82f0cff27ee306cdf7edd2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T143000Z
+DTEND:20200629T152000Z
+SUMMARY:CIP Kernel Team Activities to Accomplish Super Long Term Support - Masashi Kudo\, Cybertrust Japan Co.\, Ltd. & SZ Lin\, Moxa Inc.
+DESCRIPTION:CIP (Civil Infrastructure Platform) project aims to support industrial-grade systems in secure and reliable manners. CIP kernel team was launched in 2016 under CIP to provide and maintain Linux kernel for 10+ years\, because life cycles of such industrial-grade systems are very long by their nature.By steadily releasing SLTS (super long-term support) kernel based on LTS4.4 and LTS4.19\, the team has continuously improved the release processes and tools to facilitate the team activities. The team works with LTS and other open source projects to share its findings and contribute outputs. Also\, test automation has been strengthened. During the long support period of 10+ years\, a large number of minor releases are planned\, so the cost reduction effect by test automation will be enormous. Open source tools like "cip-kernel-sec" and "classify-failed-patches" were introduced to track the status of CVEs and to identify patches needed to apply to stable kernel\, respectively.This presentation updates CIP kernel team activities\, by featuring collaborative works with LTS \, status of test automation using KernelCI and LAVA\, and experiences of using the open source tools.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:4ad093e2eceab64f607a4846d450fac2@nathansen301
+URL:http://ossna2020.sched.com/event/4ad093e2eceab64f607a4846d450fac2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T151500Z
+DTEND:20200629T154500Z
+SUMMARY:Keynote: Linus Torvalds\, Creator of Linux & Git\, in conversation with Dirk Hohndel\, Vice President & Chief Open Source Officer\, VMware
+DESCRIPTION:
+CATEGORIES:KEYNOTE SESSIONS
+LOCATION:Keynote Theater\, Virtual 
+SEQUENCE:0
+UID:c6ffb0a0c9476f190ff57dfc27574319@nathansen301
+URL:http://ossna2020.sched.com/event/c6ffb0a0c9476f190ff57dfc27574319
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T153000Z
+DTEND:20200629T162000Z
+SUMMARY:Yocto Project LTS Releases - Nicolas Dechesne\, Linaro & David Reyna\, Wind River
+DESCRIPTION:Many projects struggle between the requirements for Long Term Support (LTS) and cadence delivery\, the balance between stability versus agility and resources.The Yocto Project is an open source project from the Linux foundation which provides tools and processes to build Linux systems. The Yocto Project makes releases every six months\, and each release is maintained by the Yocto Project for a period of one year. This works great for keeping a tight integration loop with upstream. However the release cadence and the amount of changes that occur in each release make it less than ideal for certain markets. LTS releases have been one of the main feedback from our ecosystem for some time.In this talk we will review the process behind this decision which is most likely the biggest change in the project since its inception. We will present how it will be implemented\, how member organizations participated through the Yocto Project Advisory Board\, discuss the potential impact on the Yocto Project ecosystem\, and address the lessons learned in addition to the expected shortcomings and challenges.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater A\, Virtual 
+SEQUENCE:0
+UID:a20f4f148aeb775e242e6f00ecbdfb58@nathansen301
+URL:http://ossna2020.sched.com/event/a20f4f148aeb775e242e6f00ecbdfb58
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T163000Z
+DTEND:20200629T180000Z
+SUMMARY:Tutorial: Introduction to the Embedded Boot Loader U-boot - Behan Webster\, Converse in Code
+DESCRIPTION:U-Boot is the universal bootloader used on a vast majority of embedded systems\, development kits\, products and so on. This session is an introduction into the U-Boot bootloader\, including a hands-on part\, and covers practical topics like identifying that the board is running U-Boot\, accessing and exploring the U-Boot shell\, including advanced scripting techniques to make life easier\, obtaining information about the current hardware\, accessing buses and storage and finally booting the kernel. Furthermore\, since every embedded project has it’s a unique set of requirements\, U-Boot customization topics are briefly touched at the end of the session.
+CATEGORIES:101 ESSENTIALS - EMBEDDED
+LOCATION:101 Essentials Theater\, Virtual 
+SEQUENCE:0
+UID:289938da443833634ed8991f5c4d8d90@nathansen301
+URL:http://ossna2020.sched.com/event/289938da443833634ed8991f5c4d8d90
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T163000Z
+DTEND:20200629T172000Z
+SUMMARY:Linux GPIO: Evolution and Current State of the User API - Bartosz Golaszewski\, BayLibre
+DESCRIPTION:Over the last couple years the GPIO sub-system has evolved significantly both in kernel- as well as in user-space. Certain bad design decisions made in the past - namely using a global numberspace for GPIO lines - had led to several problems that were finally addressed with the introduction of the provider-consumer\, descriptor based API in the kernel and with the character device and the corresponding library - libgpiod - in user-space.The GPIO character device has been extended with new features in linux v5.5 and final new additions before declaring it feature-complete are planned for v5.6 & v5.7. The goal of these changes is to gradually move people away from the deprecated sysfs interface as well as non-upstreamable\, SoC-specific solutions (e.g. /dev/gpiomem in RPi kernel) by providing users with appropriate replacement interfaces.This talk will briefly go through the basics of libgpiod and the character device (which have been already presented in the past) but mainly focus on the new features: support for pull-up and pull-down resistors\, configuration changes on requested lines\, the GPIO aggregator and finally the new ioctl() for monitoring state changes of GPIO lines.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:6168a4011b7a1ee90b53a30cf9167719@nathansen301
+URL:http://ossna2020.sched.com/event/6168a4011b7a1ee90b53a30cf9167719
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T165500Z
+DTEND:20200629T172000Z
+SUMMARY:Become a Data Driven Organization Through Unified Metadata Using ODPi Egeria - Mandy Chessell\, IBM
+DESCRIPTION:Become a data-driven organization through exploration of the latest developments and trends in managing compliance\, GDPR\, data catalogs and governance. The ODPi Egeria project at the Linux Foundation will share how IBM\, ING and others are collaborating to build an open ecosystem (interfaces\, repositories\, tools and experts to collaborate and exchange content) while adhering to governance guidelines and imperatives. Join this session to learn how an open metadata and governance and how you can benefit from it.
+CATEGORIES:OS PROJECT UPDATES
+LOCATION:OS Project Updates Theater\, Virtual 
+SEQUENCE:0
+UID:392525d17a9bf1e6c78c532d857f3f0e@nathansen301
+URL:http://ossna2020.sched.com/event/392525d17a9bf1e6c78c532d857f3f0e
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T173000Z
+DTEND:20200629T182000Z
+SUMMARY:PipeWire: The New Multimedia Service\, Now Ready for Automotive - Julian Bouzas\, Collabora
+DESCRIPTION:PipeWire is the new emerging open source project that aims to greatly improve both audio and video handling on Linux systems\, both desktop and embedded. It was recently adopted by Automotive Grade Linux as the core audio framework because its design's flexibility makes it possible to address automotive requirements\, replacing entirely previous solutions and addressing new use cases such as achieving ultra low latency with zero-copy media exchange\, and allowing external session managers to define device policy logic.In this talk\, Julian is going to present the PipeWire project\, how it evolved to overcome the automotive industry use cases\, and what the current upstream status is. Julian will also present the WirePlumber policy management framework\, which makes it easy to write use-case specific policy systems.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:5e89285ad274842723f3f9e4c7e86223@nathansen301
+URL:http://ossna2020.sched.com/event/5e89285ad274842723f3f9e4c7e86223
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T190500Z
+DTEND:20200629T195500Z
+SUMMARY:BoF: The Yocto Project and OpenEmbedded - Philip Balister\, Consultant OpenSDR & Nicolas Dechesne\, Linaro
+DESCRIPTION:This BoF provides an open forum for the embedded Linux community to ask questions and discuss issues with Yocto Project and OpenEmbedded principals. We open with a Yocto Project summary and OpenEmbedded State of the Union.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:AirMeet\, Virtual 
+SEQUENCE:0
+UID:38ea27fbb83524adf0efa4e3f277298f@nathansen301
+URL:http://ossna2020.sched.com/event/38ea27fbb83524adf0efa4e3f277298f
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T190500Z
+DTEND:20200629T195500Z
+SUMMARY:Sandboxing in Linux with Zero Lines of Code - Ignat Korchagin\, Cloudflare
+DESCRIPTION:Linux seccomp is a simple\, yet powerful tool to sandbox running processes and significantly decrease potential damage in case the application code gets exploited. It provides fine-grained controls for the process to declare what it can and can’t do in advance and in most cases has zero performance overhead.The only disadvantage - to utilise this framework\, application developers have to explicitly add sandboxing code to their projects and developers usually either delay this or omit completely as their main focus is mostly on the functionality of the code rather than security. Moreover\, seccomp security model is based around system calls\, but many developers\, writing their code in high-level programming languages and frameworks\, either have little knowledge to no experience with syscalls or just don’t have easy to use seccomp abstractions or libraries for their frameworks.All this makes seccomp not that widely adopted\, but what if there was a way to easily sandbox any application in any programming language without writing a single line of code? This presentation discusses potential approaches and their pros and cons.
+CATEGORIES:LINUX SYSTEMS
+LOCATION:Linux Systems Theater\, Virtual 
+SEQUENCE:0
+UID:1ac2dc5fa7e1305edb904605e9859638@nathansen301
+URL:http://ossna2020.sched.com/event/1ac2dc5fa7e1305edb904605e9859638
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T202000Z
+DTEND:20200629T215000Z
+SUMMARY:Tutorial: Debugging Embedded Devices Using GDB - A Review of Some Lessons Learned - Mike Anderson\, The PTR Group
+DESCRIPTION:Linux has an incredible selection of tools for both debugging and profiling applications to get the most out of the system. In this session\, we will start with gdb and show many of the lesser-known features that can significantly shorten debugging time. Next we will focus on the profiling and code coverage features found in gprof/gcov for determining both the performance of function calls and whether your test code is actually testing all of the code that it needs to test via examining the code coverage of the execution. Next\, we will go into more sophisticated approaches using strace\, ftrace\, oprofile and LTTng and show how they work and why you might choose one over the other for certain tasks.
+CATEGORIES:101 ESSENTIALS - EMBEDDED
+LOCATION:101 Essentials Theater\, Virtual 
+SEQUENCE:0
+UID:886040eb489895bd5a6955e47f8d575d@nathansen301
+URL:http://ossna2020.sched.com/event/886040eb489895bd5a6955e47f8d575d
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T212000Z
+DTEND:20200629T221000Z
+SUMMARY:A New Home for Data and Storage Collaboration - Kei Kusunoki\, NTT Communications; Vivian Zhu\, Intel Corporation; Yuji Yazawa\, Toyota Motor Corporation; Yu Zou\, China Unicom Cloud Data Company
+DESCRIPTION:SODA Foundation is an open source project under the Linux Foundation that aims to foster an ecosystem of open source data management and storage software for data autonomy. SODA Foundation offers a neutral forum for cross-projects collaboration\, integration and high quality end-to-end solutions to enterprise end-users.This session will include an overview of the SODA Projects and its fast-growing global community. The audience will also have a chance to learn about “YIG”\, a massively scalable object storage project which was donated to SODA Foundation by China Unicom\, a SODA project member.
+CATEGORIES:OS PROJECT UPDATES
+LOCATION:OS Project Updates Theater\, Virtual 
+SEQUENCE:0
+UID:2ed7cdbf7f2047ec6864335b281a1f76@nathansen301
+URL:http://ossna2020.sched.com/event/2ed7cdbf7f2047ec6864335b281a1f76
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200629T212000Z
+DTEND:20200629T221000Z
+SUMMARY:The Definitive Deep Dive into the .git Folder - Rob Richardson\, Independent
+DESCRIPTION:What's in the .git folder? How are commits stored? How do branches work? We'll dive deep into the objects folder\, unpack commits\, look at the types of DAG nodes\, examine object content\, and build a complete visualization of the stored content. We'll also quickly look through Git hooks\, Git config\, and ref logs. Come experience the zen of git.
+CATEGORIES:WILDCARD
+LOCATION:Wildcard Theater\, Virtual 
+SEQUENCE:0
+UID:2f412e34f0de7a2fd1f59897adad3dba@nathansen301
+URL:http://ossna2020.sched.com/event/2f412e34f0de7a2fd1f59897adad3dba
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T143000Z
+DTEND:20200630T160000Z
+SUMMARY:Tutorial: Device Tree (DTS)\, Linux Board Bring-up and Kernel Version Changing - A Review of Some Lessons Learned - Schuyler Patton\, Texas Instruments
+DESCRIPTION:This session is targeted for those who are bringing up Linux on a board based on an existing board supported in the Linux source tree and fairly new to Linux. To make a better “initial” board bring-up experience a functionally minimal Device Tree Source (DTS) approach will be discussed from which a board developer can take the initial DTS to full board functionality.The session will first look at how examining the existing board’s DTS file for how it is constructed and what to look for in terms of what is processor specific and what is board specific and why that matters.Next a method will be discussed on testing a new board DTS file on the existing reference board while waiting for the new board. Overall this method can be described as a “Hello World” type minimal DTS for a board which can be used for board bring up and kernel version upgrades. To close out the session will be a discussion on preparing for kernel upgrades as sometimes projects take years to complete.While it will not be possible to future proof a board there will be some pointers as a summary that highlight why topics presented earlier in the session that are useful as well during a kernel version upgrade.
+CATEGORIES:101 ESSENTIALS - EMBEDDED
+LOCATION:101 Essentials Theater\, Virtual 
+SEQUENCE:0
+UID:240cd54c3085fbecefc8d4ce51b2e679@nathansen301
+URL:http://ossna2020.sched.com/event/240cd54c3085fbecefc8d4ce51b2e679
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T143000Z
+DTEND:20200630T152000Z
+SUMMARY:A Disciplined Approach to Debugging - Lev Iserovich\, D. E. Shaw Research
+DESCRIPTION:A large fraction of the time spent on software development and system design projects is used for debugging. However\, effective debugging techniques are not as well-studied or formalized as those for writing code. Instead\, debugging is typically tackled with ad-hoc and idiosyncratic approaches. This talk will present a systematic approach to debugging software and hardware in order to locate bugs more effectively. It will also describe a taxonomy to classify such “insects\,” which should enable better code-writing practices.Debugging faulty hardware\, single executables\, multi-threaded programs\, and distributed applications will be covered. Tips and tricks for software and hardware debugging using tools like GDB\, Wireshark\, gperftools\, and hardware protocol analyzers will also be presented\, along with examples of both common and unusual bugs caught in the wild.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:6d0b4510fd2bd5f4239f1d6475204b54@nathansen301
+URL:http://ossna2020.sched.com/event/6d0b4510fd2bd5f4239f1d6475204b54
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T153000Z
+DTEND:20200630T162000Z
+SUMMARY:Building Bare Metal Toolchains\, Crosstool-ng and Yocto Project - Mark Hatle\, Xilinx
+DESCRIPTION:Recently I was tasked to create a bare metal toolchain to create software for a variety of embedded processor architectures and configurations. Crosstool-ng is often used to create these toolchains\, but Yocto Project SDK builder is capable of doing this as well. This presentation will compare both crosstool-ng and the Yocto Project for this task\, include my experiences working with both tools\, include Yocto Project configuration information and give the audience an understanding when they may want to use one tool vs the other.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:e9b8e42c44f7f17d42534a48f2c1ba3f@nathansen301
+URL:http://ossna2020.sched.com/event/e9b8e42c44f7f17d42534a48f2c1ba3f
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T162500Z
+DTEND:20200630T175500Z
+SUMMARY:Tutorial: Introduction to I2C and SPI: Both In-kernel and In-userspace - Michael Welling\, QWERTY Embedded Design\, LLC
+DESCRIPTION:I2C was initially invented by Philips as a simple 2-wire low-speed communications interface between CPUs and simple peripherals. Used primarily in embedded systems to connect things like I/O devices\, it is now used\, under various names\, by most IC manufacturers on many System-on-chips. This seminar will introduce I2C and the I2Cdev API which allows you to write I2C drivers from userspace in Linux.The SPI\, or Serial Peripheral Interface is a protocol developed by Motorola which has become a defacto standard for short distance communication between CPU and peripherals. Although it can be called by several different names\, it is a very common bus on embedded devices. This seminar will introduce SPI generally and SPIdev which is a Linux userspace API to write simple SPI drivers without having to write kernel code.
+CATEGORIES:101 ESSENTIALS - EMBEDDED
+LOCATION:101 Essentials Theater\, Virtual 
+SEQUENCE:0
+UID:b9ef2593f188139ad8b9bf9f970ae772@nathansen301
+URL:http://ossna2020.sched.com/event/b9ef2593f188139ad8b9bf9f970ae772
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T162500Z
+DTEND:20200630T171500Z
+SUMMARY:Kernel Coding the Upstream Way - Tim Bird\, Sony
+DESCRIPTION:The Linux kernel has a number of unwritten idioms and design patterns that are used for optimal development and code efficiency. This talk seeks to illustrate these coding patterns\, and help developers implement Linux kernel code in the "upstream way".Tim will describe some of the kernel idioms for error handling\, use of gotos\, structures with embedded data and links\, use of function pointers\, when to use ifdefs\, inlines and macros\, structure initialization\, and more. Each pattern will be explained\, with examples\, and the rationale for each pattern will be provided.The purpose is to allow a developer to write code that is not only efficient\, making best use of kernel interfaces\, but also to make the code easier to maintain and easier to be contribute upstream\, with less correction required for acceptance into mainline.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater A\, Virtual 
+SEQUENCE:0
+UID:5ef9f42ce4cebbd26068aa4d19ce31e2@nathansen301
+URL:http://ossna2020.sched.com/event/5ef9f42ce4cebbd26068aa4d19ce31e2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T162500Z
+DTEND:20200630T171500Z
+SUMMARY:Linux Stateless Video Decoder Support - Nicolas Dufresne\, Collabora
+DESCRIPTION:While it has been under development for years\, the support for video CODEC accelerators has gain a lot of traction in past year. A formal specification has now been merge into Linux Media subsystem and staging control APIs and drivers now exist. This allow for blob free HW accelerated decoding on popular SoC like Allwinner\, i.MX8 and Rockchip.In this talk\, Nicolas will give an overview of the decoding process using such hardware accelerators along with an overview of the user space API and how it's used within multimedia frameworks. Nicolas will also explain the relation between this and accelerators attached to modern GPUs. This presentation would not be complete without mentioning the development of FFMPEG and GStreamer native support and their major role in the development of the the new Open Source drivers.This talk is addressed to multimedia enthusiasts and developers curious about video decoding and the upstream effort effort to make that available to users.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:6fdcf9854e1adffd74f26b2250f2fc4a@nathansen301
+URL:http://ossna2020.sched.com/event/6fdcf9854e1adffd74f26b2250f2fc4a
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T190000Z
+DTEND:20200630T195000Z
+SUMMARY:DMA-BUF Heaps: Linux User-space Device Buffer Allocation and its Uses - Andrew Davis\, Texas Instruments
+DESCRIPTION:The DMA-BUF Heaps framework is designed as a central user-space allocator for device buffers. Created with the goal of replacing various out-of-tree allocators such as PMEM\, CMEM\, MPM\, and ION with a single unified and stable API. After almost a year of upstreaming efforts the framework has been merged into the Linux kernel 5.6-rc1. This talk discuses the motivations for this work and the challenges and benefits associated with migrating applications and frameworks\, such as OpenCL\, OpenVX\, and Android Grallocs\, to use this new kernel API.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:94cc96881034b91d0d9a582d5c616244@nathansen301
+URL:http://ossna2020.sched.com/event/94cc96881034b91d0d9a582d5c616244
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T190000Z
+DTEND:20200630T195000Z
+SUMMARY:Finding Sources of Latency on your Linux System - Steven Rostedt\, VMware
+DESCRIPTION:In today's computer systems the level of complexity has risen such that when a task or response to an event takes longer than expected\, it is not easy knowing what the culprit is. The Linux operating system contains several utilities that allows a user to see where things may be held up. This talk will cover many of these utilities and briefly explain how to use them. From the hardware latency detector to the latency tracers. It will also discuss the new synthetic event interface that allows users to create a histogram on the time it takes any two events to occur.I have previously discussed the latency tracers but they are soon to be obsolete\, and the new synthetic event interface will be replacing them. There is still a lot more development going on with the synthetic events and this talk will briefly go over some of the new features that are yet to arrive.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater A\, Virtual 
+SEQUENCE:0
+UID:ae8bf444469d0f9dec3a6e7d136a63d2@nathansen301
+URL:http://ossna2020.sched.com/event/ae8bf444469d0f9dec3a6e7d136a63d2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T190000Z
+DTEND:20200630T195000Z
+SUMMARY:Robot Operating System (ROS) 2 - How Open Source Software and Linux is Powering the Next Generation of Robotics - Katherine Scott\, Open Robotics
+DESCRIPTION:Robot Operating System (ROS) is a set of mature free and open source software packages used by the robotics community to program robots. Recently ROS had its first major version upgrade in a decade to ROS 2. This new version introduces a number of changes and new features\, many of which simplify the development process and allow users to build virtual robots without ever touching a piece of hardware. ROS 2 is the version of ROS that supports Python 3 out of the box and has new additions that allow for high-fidelity simulations. Simulation makes learning advanced robotics topics more accessible\, as you no longer need to outfit a robotics lab and you can simulate cutting edge hardware for free. In this talk we'll cover the state of the open source robotics ecosystem and cover the changes made in ROS 2 to improve its simplicity\, stability\, safety\, and security. These features\, along with enhanced embedded hardware support\, are helping ROS become the de facto standard for the developers of autonomous vehicles\, drones\, industrial\, and agricultural robots. This talk will give the Linux community and update on ROS ecosystem and a starting point for learning how to use it.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:ff8df331d1173a0b546dcaa9688af21e@nathansen301
+URL:http://ossna2020.sched.com/event/ff8df331d1173a0b546dcaa9688af21e
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T201500Z
+DTEND:20200630T214500Z
+SUMMARY:Tutorial: Spelunking for Hardware Data - Matt Porter\, Konsulko Group
+DESCRIPTION:This tutorial will introduce students to the process of discovering hardware information necessary to develop device driver software. Students will gain an understanding of how to navigate schematics\, datasheets\, SoC reference manuals\, and the Device Tree binding documentation to extract the pertinent data for use in a device driver. A detailed example using a production hardware platform will be used to illustrate the discovery process and students will have an opportunity to test this process with additional hardware spelunking exercises.
+CATEGORIES:101 ESSENTIALS - EMBEDDED
+LOCATION:101 Essentials Theater\, Virtual 
+SEQUENCE:0
+UID:1321a4299ae92668d763c1cded83cfa7@nathansen301
+URL:http://ossna2020.sched.com/event/1321a4299ae92668d763c1cded83cfa7
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T201500Z
+DTEND:20200630T210500Z
+SUMMARY:Developing\, Building and Testing Your Baremetal Applications Using The Yocto Project and OpenEmbedded Infrastructure - Alejandro Hernandez Samaniego\, Microsoft
+DESCRIPTION:Multiarchitecture SoCs are more widely used\, usually containing a large architecture where it can run a full operating system such as Linux\, and one or more small architectures designed to run an RTOS or a baremetal application\,requiring less hardware resources\,leveraging suitable tasks from one to another creating a more efficient product.While the Yocto Project is well known for its capabilities on creating customized Embedded Linux Distributions\,bitbake is also capable of building a toolchain to create Baremetal applications or an RTOS.In this presentation Alejandro will show how to create baremetal applications using the same flow currently used in OpenEmbedded to develop Linux applications\, using recipes\, classes and user configuration files\, he will show how users from the community can benefit from a single flow\, showcasing how to run these applications on QEMU and create tests for them to be automatically tested using the OpenEmbedded infrastructure along with their corresponding Linux distributions.Anyone from the community interested in learning about baremetal programming or about the Yocto Project might find the contents of this presentation interesting.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater A\, Virtual 
+SEQUENCE:0
+UID:32ba37d480662cdbb91d627645847464@nathansen301
+URL:http://ossna2020.sched.com/event/32ba37d480662cdbb91d627645847464
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200630T211500Z
+DTEND:20200630T220500Z
+SUMMARY:Using MIPI DSI as Main Display Interface - Marcel Ziswiler\, Toradex AG
+DESCRIPTION:The MIPI Display Serial Interface (DSI) is the de-facto standard display interface featured by modern higher-end SoCs. Lacking the long-term availability of discrete MIPI DSI display panels most embedded systems rely on bridge chips converting to more common display interfaces like parallel RGB\, LVDS\, (e)DP or HDMI. Our generic system concept relies on DSI adapter boards integrating various such bridge chips. After introducing the Linux DSI subsystem this talk concentrates on the auto-detection of such DSI adapters based on parametrisation stored in EEPROMs. The U-Boot boot loader reads the EEPROM contents and chooses the applicable device tree overlay to be applied. The concept of DDC/EDID with hot-plug detect vs. a custom model-specific parametrisation is discussed. The talk continues covering the integration aspect of such DSI bridge chips within the Linux DRM stack. Various limitations of the DSI subsystem and possible solutions are discussed. The DSI bridge chip ecosystem is covered and we look into possible reasons only very few bridge chips are actually supported in mainline so far. The talk concludes with a live demo of our DSI auto-detection implementation.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:8fbad840129e5ce15d08e39d790b3ca5@nathansen301
+URL:http://ossna2020.sched.com/event/8fbad840129e5ce15d08e39d790b3ca5
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200701T150000Z
+DTEND:20200701T151000Z
+SUMMARY:Keynote Lightning Talk: Wyliodrin STUDIO: From Prototyping to Small-scale Deployment - Ioana Culic\, Teaching Assistant & Cosmin Daniel Radu\, Teaching Assistant\, Politehnica University of Bucharest
+DESCRIPTION:Prototyping is the first step in building any commercial or industrial IoT solution. As this process needs to be fast\, various development tools especially developed for IoT prototyping have been implemented. Wyliodrin STUDIO is such a platform. It is an open source\, easy to use IDE for the Internet of Things that enables remote control over embedded devices and fast deployment of simple applications.While a good prototyping tool\, Wyliodrin STUDIO was designed as an educational tool to run simple applications on a limited number of devices.The purpose of this presentation is to give an overview of how we managed to expand Wyliodrin STUDIO so it covers the complete IoT development process. To achieve this\, we have implemented container-based technologies so applications can be easily deployed and managed on clusters of devices. The result is an open source platform that can be used for both prototyping IoT projects and managing small-scale industrial deployments of applications.
+CATEGORIES:KEYNOTE SESSIONS
+LOCATION:Keynote Theater\, Virtual 
+SEQUENCE:0
+UID:8bf5c1dd7751ba9d618f344883274125@nathansen301
+URL:http://ossna2020.sched.com/event/8bf5c1dd7751ba9d618f344883274125
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200701T161500Z
+DTEND:20200701T170500Z
+SUMMARY:Automotive Grade Linux on Raspberry Pi: How Does It Work? - Leon Anavi\, Konsulko Group
+DESCRIPTION:Automotive Grade Linux (AGL) is a leading embedded Linux distribution for the automotive industry. The AGL Unified Code Base (UCB)\, using the Yocto Project and OpenEmbedded\, has been already adopted by automotive manufacturers and it is present in vehicles like Toyota Camry and all-new 2020 Subaru Outback and Subaru Legacy.Since 2016 AGL has been ported to Raspberry Pi which nowadays is a prefer getting started platform among the community. The presentation will explore the current status of AGL on Raspberry Pi\, reveal war stories and practical experiences for supporting Wayland\, PipeWire\, libostree for software over the air updates as well as various hardware peripherals.Guidelines and step by step instructions for building AGL image for Raspberry Pi will be revealed. We will do a deep dive in internals\, such as integration of meta-raspberrypi BSP layer\, Linux kernel and Mesa versions with firmware KMS to support both HDMI and the official Raspberry Pi touch screen DSI display.The talk is appropriate for anyone\, including beginners. No previous experience is required. Hopefully\, the presentation will encourage more people to try AGL on Raspberry Pi and join our community
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater B\, Virtual 
+SEQUENCE:0
+UID:9109f2e20e26fd078a9dbf6efcf42d98@nathansen301
+URL:http://ossna2020.sched.com/event/9109f2e20e26fd078a9dbf6efcf42d98
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200701T161500Z
+DTEND:20200701T170500Z
+SUMMARY:Reproducible Builds and Hash Equivalence in the Yocto Project - Joshua Watt\, Garmin
+DESCRIPTION:As embedded Linux devices get more complex\, many questions arise about the process of constructing these systems and how it can be improved. Can these complex systems be built more efficiently to reduce development time? How can developers be assured that these systems can be built reproducibly to ensure software supply chain integrity? Joshua will highlight two new features in the latest release of the Yocto project specifically designed to address these questions. The first feature is hash equivalence which reduces build times by collectively detecting when tasks have rebuilt unnecessarily and preventing rebuilds of downstream tasks. Joshua will explain how this feature works\, how to apply it to your own projects\, and what to expect when you do. The second feature is build reproducibility testing\, which ensures that the project has binary identical outputs from one build to the next. Joshua will describe how these tests work\, what they currently cover within the project\, and how to enable them for your own projects. Taken together\, these features improve the Yocto project’s unique ability to effectively construct complex Linux embedded systems that are cost effective and secure.
+CATEGORIES:EMBEDDED LINUX CONFERENCE (ELC)
+LOCATION:ELC Theater A\, Virtual 
+SEQUENCE:0
+UID:f11a2572344ee0ed89ea8cd4b3600fe6@nathansen301
+URL:http://ossna2020.sched.com/event/f11a2572344ee0ed89ea8cd4b3600fe6
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200701T171500Z
+DTEND:20200701T180500Z
+SUMMARY:Software Update (OTA) for Zephyr - Parthiban Nallathambi\, Linumiz
+DESCRIPTION:Zephyr devices can be connected in two possible (direct and in-direct) ways to the internet. Directly using Modem/WiFi/Ethernet medium or in-directly via local radio through Gateways like Linux. Upgrading such Zephyr system in the field is a complex task and must be robust\, secure.This talk will details various possible update solutions available like UpdateHub\, Hawkbit\, SWUpdate for Zephyr. Using a NXP FRDM-K64F board as an example\, we will discuss and demo different possible ways for updating Zephyr system.
+CATEGORIES:INTERNET OF THINGS
+LOCATION:Internet of Things Theater\, Virtual 
+SEQUENCE:0
+UID:d3fe0df6070480c554a387023d9ec3f3@nathansen301
+URL:http://ossna2020.sched.com/event/d3fe0df6070480c554a387023d9ec3f3
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200701T185000Z
+DTEND:20200701T194000Z
+SUMMARY:Managing the Wind: Remote Management for Zephyr Devices With LwM2M - Frédéric Desbiens\, Eclipse Foundation
+DESCRIPTION:LightweightM2M (LwM2M) by OMA SpecWorks is a device management protocol designed for sensor networks and the demands of a machine-to-machine (M2M) environment. It is designed for the remote management of devices and is based on the Contrained Application Protocol (CoAP\, RFC 7252)\, which itself provides an interaction model similar to the client/server model of HTTP.The Zephyr RTOS from the Linux Foundation possesses built-in support for LwM2M. In this presentation\, you will discover how to leverage LwM2M to manage Zephyr-based devices. You will understand the pros and cons of using Zephyr's built-in LwM2M client. You will also learn about various LwM2m servers\, including the Eclipse Leshan open source project\, which you can use to build your own LwM2M management server.
+CATEGORIES:INTERNET OF THINGS
+LOCATION:Internet of Things Theater\, Virtual 
+SEQUENCE:0
+UID:b8fd6fd33e499654ac169f09d1da1b44@nathansen301
+URL:http://ossna2020.sched.com/event/b8fd6fd33e499654ac169f09d1da1b44
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200701T185000Z
+DTEND:20200701T194000Z
+SUMMARY:Container Kernel Development - Christian Brauner\, Canonical
+DESCRIPTION:Although containers are a userspace fiction they are based on a multitude of kernel features. They very much tie into almost all parts of the kernel. In this talk\, we will look at recent and future kernel features that are relevant for containers. In addition to explaining how they can be used to expand the functionality of containers we will also focus on how they can be used to make containers more secure.
+CATEGORIES:LINUX SYSTEMS
+LOCATION:Linux Systems Theater\, Virtual 
+SEQUENCE:0
+UID:225130d3b6a397a75471582a682024af@nathansen301
+URL:http://ossna2020.sched.com/event/225130d3b6a397a75471582a682024af
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200701T210500Z
+DTEND:20200701T215500Z
+SUMMARY:When Linux on the Desktop is a Second Class Corporate Citizen - Mike Jang\, GitLab
+DESCRIPTION:The tech company you've joined wants to give you a laptop for your work. Yay!But they offer only Macs. Or if they offer Linux\, they refuse to support it. What do you do?This talk discusses strategies to help your companies accept and support Linux in development and administrative environments.if your company refuses to allow Linux on the "Desktop"\, what numbers can you put together to show how Linux is a better option? How do you show that Linux is cost-effective for users who are comfortable with it?If your company will purchase a Linux laptop for your work\, but refuses to support it internally\, what do you do? How do you set up a community where you work where you can support each other?My slides: https://slides.com/mike-1/linux-desktop-second-class
+CATEGORIES:WILDCARD
+LOCATION:Wildcard Theater\, Virtual 
+SEQUENCE:0
+UID:c557abed22e691cb56a3938fb6677b04@nathansen301
+URL:http://ossna2020.sched.com/event/c557abed22e691cb56a3938fb6677b04
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200702T150000Z
+DTEND:20200702T163000Z
+SUMMARY:ODPi - Making Data Better
+DESCRIPTION:ODPi creates open source standards to help you use and understand data across all platforms. ODPi is a non-profit organization supported by The Linux Foundation and dozens of individuals and member organizations. Members are committed to simplifying and standardizing the data ecosystem so that data can be easily and securely shared across products\, platforms\, and systems. Learn more about the people and organizations involved in ODPi or to access publicly available resources.Join us to learn about the latest approaches from ODPi Projects including Egeria\,  BI & AI\, and OpenDS4All. You will gain insight and roadmaps about several open source projects under the ODPi umbrella that can help you with your data strategies.
+CATEGORIES:LF PROJECT MINI-SUMMITS
+LOCATION:LF Project Mini-Summit Theater\, Virtual 
+SEQUENCE:0
+UID:a0f0ccdb06c549a6abc6ed06b4e2ad27@nathansen301
+URL:http://ossna2020.sched.com/event/a0f0ccdb06c549a6abc6ed06b4e2ad27
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200702T150000Z
+DTEND:20200702T163000Z
+SUMMARY:Technical Resume Writing Workshop - Lindsey Anne Thorne\, Vaco with special guest Mary Kypreos\, Transparent Systems
+DESCRIPTION:Join us for an interactive workshop on the dos and don’ts of writing a technical resume. Extra attention will be placed on showing off your open source contributions! 
+CATEGORIES:WORKSHOPS & ASK THE EXPERT SESSIONS
+LOCATION:Event Experiences Theater\, Virtual 
+SEQUENCE:0
+UID:a5786f8bcf528d452268ab2699cd92ef@nathansen301
+URL:http://ossna2020.sched.com/event/a5786f8bcf528d452268ab2699cd92ef
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200702T190000Z
+DTEND:20200702T203000Z
+SUMMARY:SODA – One Data Framework\, Infinite Possibilities
+DESCRIPTION:SODA Foundation is an open source project within the Linux Foundation that aims to foster an ecosystem of open source data management and storage software for data autonomy. The SODA data framework is part of this effort to enable data mobility\, data protection\, data security\, data lifecycle\, and more for cloud native\, virtualization\, and other environments.This session will provide an introduction to the SODA Foundation\, its mission\, roadmap\, projects\, and activities. The audience will also get to hear from a SODA end-user perspective\, and also learn how to join the community and contribute to the projects and ecosystem.Agenda:2:00 - 2:10 PM   SODA Foundation Overview\,  - Chagam Anjaneya\, Intel 2:10 - 2:25 PM   Projects Overview\, Use Cases and Roadmap - Rakesh Jain\, IBM2:25 - 2:45 PM   Core Projects and Architecture - Sanil Kumar\, Huawei Technologies 2:45 - 3:20 PM   Member Projects (potential SODA Native and Eco Projects)LINSTOR – Yusuf Yildiz\, LINBIT OpenEBS – Kiran Mova\, MayaDataZenko  - Stefano Maffulli\, Scality3:20 - 3:30 PM   SODA Outreach and Wrap-up - Lawrence Lai\, Futurewei Technologies
+CATEGORIES:LF PROJECT MINI-SUMMITS
+LOCATION:LF Project Mini-Summit Theater\, Virtual 
+SEQUENCE:0
+UID:02313c44fc79d49069bffacef474185f@nathansen301
+URL:http://ossna2020.sched.com/event/02313c44fc79d49069bffacef474185f
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200702T190000Z
+DTEND:20200702T203000Z
+SUMMARY:Zephyr Mini-Summit
+DESCRIPTION:The Zephyr Mini-Summit is designed to introduce you to the leading Open Source RTOS built with safety and security in mind.  Attendees will learn why Zephyr is gaining the attention of developers\, with its support for BLE\, OpenThread\, LTE-M/NB-IoT cellular communications\, and more.Attendees will learn:Zephyr overviewIntro to WestOverview of BluetoothSecurity IssuesSafety CertificationUse CaseAgenda:2:00 - 2:10 PM   Zephyr overview - John Round\, NXP Semiconductors2:10 - 2:20 PM   Intro to West - Marti Bolivar\, Nordic Semiconductor2:20 - 2:40 PM   Overview of Bluetooth - Martin Woolley\, Bluetooth2:40 - 2:55 PM   Security Issues - David Brown\, Linaro2:55 - 3:05 PM   Safety Certification - Kate Stewart\, The Linux Foundation3:05 - 3:20 PM   Use Case - Michael Gielda\, Antmicro3:20 - 3:30 PM   Q&A
+CATEGORIES:LF PROJECT MINI-SUMMITS
+LOCATION:LF Project Mini-Summit Theater\, Virtual 
+SEQUENCE:0
+UID:86765d8da22643e9ada4b976d31dd75d@nathansen301
+URL:http://ossna2020.sched.com/event/86765d8da22643e9ada4b976d31dd75d
+END:VEVENT
+END:VCALENDAR
