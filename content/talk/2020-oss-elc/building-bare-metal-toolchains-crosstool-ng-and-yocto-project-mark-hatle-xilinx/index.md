@@ -1,14 +1,13 @@
 ---
 title: "Building Bare Metal Toolchains, Crosstool-ng and Yocto Project"
-
-# subtitle: ""
+subtitle: "Mark Hatle, Xilinx"
 # summary: ""
 tags:
 - Yocto
 
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
-featured: false
+featured: true
 draft: false
 
 event: "Building Bare Metal Toolchains, Crosstool-ng and Yocto Project"
@@ -30,10 +29,6 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
-
-## Building Bare Metal Toolchains, Crosstool-ng and Yocto Project
-
-- Mark Hatle, Xilinx
 
 > Recently I was tasked to create a bare metal toolchain to create software for a variety of embedded processor architectures and configurations. Crosstool-ng is often used to create these toolchains, but Yocto Project SDK builder is capable of doing this as well. This presentation will compare both crosstool-ng and the Yocto Project for this task, include my experiences working with both tools, include Yocto Project configuration information and give the audience an understanding when they may want to use one tool vs the other.
 

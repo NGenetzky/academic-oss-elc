@@ -1,12 +1,12 @@
 ---
 title: "Developing, Building and Testing Your Baremetal Applications Using The Yocto Project and OpenEmbedded Infrastructure"
+subtitle: "Alejandro Hernandez Samaniego, Microsoft"
 
-# subtitle: ""
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
 featured: true
-draft: true
+draft: false
 tags:
 - Yocto
 
@@ -31,10 +31,6 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
-
-## Developing, Building and Testing Your Baremetal Applications Using The Yocto Project and OpenEmbedded Infrastructure
-
-- Alejandro Hernandez Samaniego, Microsoft
 
 > Multiarchitecture SoCs are more widely used, usually containing a large architecture where it can run a full operating system such as Linux, and one or more small architectures designed to run an RTOS or a baremetal application,requiring less hardware resources,leveraging suitable tasks from one to another creating a more efficient product.
 >

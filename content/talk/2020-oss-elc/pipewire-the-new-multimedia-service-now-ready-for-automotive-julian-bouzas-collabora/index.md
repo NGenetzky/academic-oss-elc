@@ -8,7 +8,7 @@ tags:
 categories: [ "2020-oss-elc" ]
 date: 2020-06-29
 featured: false
-draft: true
+draft: false
 
 event: "PipeWire: The New Multimedia Service, Now Ready for Automotive"
 event_url: "https://ossna2020.sched.com/event/c3TN/pipewire-the-new-multimedia-service-now-ready-for-automotive-julian-bouzas-collabora"

@@ -1,7 +1,7 @@
 ---
 title: "Managing the Wind: Remote Management for Zephyr Devices With LwM2M"
+subtitle: "Frédéric Desbiens, Eclipse Foundation"
 
-# subtitle: ""
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-07-01
@@ -34,10 +34,6 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
-
-## Managing the Wind: Remote Management for Zephyr Devices With LwM2M
-
-- Frédéric Desbiens, Eclipse Foundation
 
 > LightweightM2M (LwM2M) by OMA SpecWorks is a device management protocol designed for sensor networks and the demands of a machine-to-machine (M2M) environment. It is designed for the remote management of devices and is based on the Contrained Application Protocol (CoAP, RFC 7252), which itself provides an interaction model similar to the client/server model of HTTP.
 >

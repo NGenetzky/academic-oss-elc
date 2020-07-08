@@ -1,7 +1,6 @@
 ---
 title: "Reproducible Builds and Hash Equivalence in the Yocto Project"
-
-# subtitle: ""
+subtitle: "Joshua Watt, Garmin"
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-07-01
@@ -36,14 +35,11 @@ links:
 projects: [ "2020-oss-elc" ]
 ---
 
-## Reproducible Builds and Hash Equivalence in the Yocto Project
-
--  Joshua Watt, Garmin
-- [reproducible-builds](https://reproducible-builds.org/)
-
 > As embedded Linux devices get more complex, many questions arise about the process of constructing these systems and how it can be improved. Can these complex systems be built more efficiently to reduce development time? How can developers be assured that these systems can be built reproducibly to ensure software supply chain integrity? Joshua will highlight two new features in the latest release of the Yocto project specifically designed to address these questions. The first feature is hash equivalence which reduces build times by collectively detecting when tasks have rebuilt unnecessarily and preventing rebuilds of downstream tasks. Joshua will explain how this feature works, how to apply it to your own projects, and what to expect when you do. The second feature is build reproducibility testing, which ensures that the project has binary identical outputs from one build to the next. Joshua will describe how these tests work, what they currently cover within the project, and how to enable them for your own projects. Taken together, these features improve the Yocto project’s unique ability to effectively construct complex Linux embedded systems that are cost effective and secure.
 
 ## Notes
+
+- [reproducible-builds](https://reproducible-builds.org/)
 
 ### RunQueue
 

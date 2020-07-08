@@ -1,17 +1,17 @@
 ---
 title: "Tutorial: Introduction to the Embedded Boot Loader U-boot"
+subtitle: "Behan Webster, Converse in Code"
 
-# subtitle: ""
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-06-29
 featured: false
 draft: false
 tags:
-- Yocto
+- Linux
 
-# event: "2020 OSS ELC"
-# event_url: ""
+event: "Tutorial: Introduction to the Embedded Boot Loader U-boot"
+event_url: "https://ossna2020.sched.com/event/c47M/tutorial-introduction-to-the-embedded-boot-loader-u-boot-behan-webster-converse-in-code"
 # location: ""
 # summary: ""
 # abstract: ""
@@ -21,7 +21,7 @@ publishDate: "2020-06-29"
 
 links:
 - name: Event
-  url: https://ossna2020.sched.com/event/
+  url: https://ossna2020.sched.com/event/c47M/tutorial-introduction-to-the-embedded-boot-loader-u-boot-behan-webster-converse-in-code
 
 # image:
 #   caption: ""
@@ -29,10 +29,6 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
-
-## Tutorial: Introduction to the Embedded Boot Loader U-boot - Behan Webster, Converse in Code
-
-- Behan Webster, Converse in Code
 
 > U-Boot is the universal bootloader used on a vast majority of embedded systems, development kits, products and so on. This session is an introduction into the U-Boot bootloader, including a hands-on part, and covers practical topics like identifying that the board is running U-Boot, accessing and exploring the U-Boot shell, including advanced scripting techniques to make life easier, obtaining information about the current hardware, accessing buses and storage and finally booting the kernel. Furthermore, since every embedded project has it’s a unique set of requirements, U-Boot customization topics are briefly touched at the end of the session. 
 

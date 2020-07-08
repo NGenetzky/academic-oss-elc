@@ -1,7 +1,7 @@
 ---
 title: "Software Update (OTA) for Zephyr"
+subtitle: "Parthiban Nallathambi, Linumiz"
 
-# subtitle: ""
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-07-01
@@ -34,10 +34,6 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
-
-## Software Update (OTA) for Zephyr
-
-- Parthiban Nallathambi, Linumiz
 
 > Zephyr devices can be connected in two possible (direct and in-direct) ways to the internet. Directly using Modem/WiFi/Ethernet medium or in-directly via local radio through Gateways like Linux. Upgrading such Zephyr system in the field is a complex task and must be robust, secure.
 >

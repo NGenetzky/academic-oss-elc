@@ -1,7 +1,6 @@
 ---
 title: "Finding Sources of Latency on your Linux System"
-
-# subtitle: ""
+subtitle: "Steven Rostedt, VMware"
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
@@ -35,10 +34,6 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
-
-## Finding Sources of Latency on your Linux System
-
-- Steven Rostedt, VMware
 
 > In today's computer systems the level of complexity has risen such that when a task or response to an event takes longer than expected, it is not easy knowing what the culprit is. The Linux operating system contains several utilities that allows a user to see where things may be held up. This talk will cover many of these utilities and briefly explain how to use them. From the hardware latency detector to the latency tracers. It will also discuss the new synthetic event interface that allows users to create a histogram on the time it takes any two events to occur.
 >

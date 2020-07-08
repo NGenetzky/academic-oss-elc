@@ -1,8 +1,9 @@
 ---
-title: "YOCTO PROJECT® DEV DAY VIRTUAL NORTH AMERICA 2020"
+title: "Yocto Project Dev Day Virtual NA 2020"
 
 # summary: ""
-# tags: []
+tags:
+- Yocto
 # categories: []
 date: 2020-07-02
 # external_link: ""
@@ -43,8 +44,6 @@ links:
 #   Otherwise, set `slides = ""`.
 # slides: ""
 ---
-
-## YOCTO PROJECT® DEV DAY VIRTUAL NORTH AMERICA 2020
 
 > The Yocto Project Developer Day Virtual is a one day presentation and hands-on training event that puts you in direct contact with Yocto Project technical experts and developers. Its primary aim is to show developers how to create, customize, and optimize Linux distributions for embedded devices using the rich features, tools, and content of Yocto Project. Our knowledgeable and engaging instructors will help you better understand topics like build system workflow, working with containers, building applications, optimizing images, hardening your devices, and leveraging tools like devtool. You will also have a chance to network and put your new skills to work.
 

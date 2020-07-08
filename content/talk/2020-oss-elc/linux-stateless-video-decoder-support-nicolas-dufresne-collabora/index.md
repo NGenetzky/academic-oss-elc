@@ -1,7 +1,7 @@
 ---
 title: "Linux Stateless Video Decoder Support"
+subtitle: "Nicolas Dufresne, Collabora"
 
-# subtitle: ""
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
@@ -34,10 +34,6 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
-
-## Linux Stateless Video Decoder Support
-
-- Nicolas Dufresne, Collabora
 
 > While it has been under development for years, the support for video CODEC accelerators has gain a lot of traction in past year. A formal specification has now been merge into Linux Media subsystem and staging control APIs and drivers now exist. This allow for blob free HW accelerated decoding on popular SoC like Allwinner, i.MX8 and Rockchip.
 >

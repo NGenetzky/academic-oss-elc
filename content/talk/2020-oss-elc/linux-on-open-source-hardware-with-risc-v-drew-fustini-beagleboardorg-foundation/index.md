@@ -1,7 +1,6 @@
 ---
 title: "Linux on Open Source Hardware with RISC-V"
-
-# subtitle: ""
+subtitle: "Drew Fustini, BeagleBoard.org Foundation"
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
@@ -24,6 +23,8 @@ links:
   url: https://ossna2020.sched.com/event/c3Pn/linux-on-open-source-hardware-with-risc-v-drew-fustini-beagleboardorg-foundation
 - name: Slides
   url: https://github.com/pdp7/talks/blob/master/rv-elc.pdf
+- name: Talks
+  url: https://github.com/pdp7/talks
 
 # image:
 #   caption: ""
@@ -31,13 +32,6 @@ links:
 #   preview_only: false
 projects: [ "2020-oss-elc" ]
 ---
-
-## Linux on Open Source Hardware with RISC-V
-
-- Drew Fustini, BeagleBoard.org Foundation
-- https://github.com/pdp7/talks
-- https://github.com/pdp7/talks/blob/master/rv-elc.pdf
-- https://media.ccc.de/v/36c3-10549-linux_on_open_source_hardware_with_open_source_chip_design
 
 > Want to run Linux on open hardware? This talk will explore Open Source Hardware projects capable of that task, and explore how RISC-V and free software FPGA projects can be leveraged to create libre systems.
 >
@@ -48,6 +42,10 @@ projects: [ "2020-oss-elc" ]
 > Finally, I will explore the landscape of open source chip design projects and the Linux-capable RISC-V silicon chips on horizon for 2020.
 
 ## Notes
+
+- https://github.com/pdp7/talks
+- https://github.com/pdp7/talks/blob/master/rv-elc.pdf
+- https://media.ccc.de/v/36c3-10549-linux_on_open_source_hardware_with_open_source_chip_design
 
 What's required to be "open hardware"
 
