@@ -67,13 +67,13 @@ main(){
     # hugo_new_talk 'tutorial-spelunking-for-hardware-data-matt-porter-konsulko-group'
 
     # # https://ossna2020.sched.com/event/cZJ9/automotive-grade-linux-on-raspberry-pi-how-does-it-work-leon-anavi-konsulko-group
-    # hugo_new_talk 'automotive-grade-linux-on-raspberry-pi-how-does-it-work-leon-anavi-konsulko-group'
+    hugo_new_talk 'automotive-grade-linux-on-raspberry-pi-how-does-it-work-leon-anavi-konsulko-group'
 
     # # https://ossna2020.sched.com/event/c3R9/reproducible-builds-and-hash-equivalence-in-the-yocto-project-joshua-watt-garmin
-    # hugo_new_talk 'reproducible-builds-and-hash-equivalence-in-the-yocto-project-joshua-watt-garmin'
+    hugo_new_talk 'reproducible-builds-and-hash-equivalence-in-the-yocto-project-joshua-watt-garmin'
 
     # # https://ossna2020.sched.com/event/c3Ve/when-linux-on-the-desktop-is-a-second-class-corporate-citizen-mike-jang-gitlab
-    # hugo_new_talk 'when-linux-on-the-desktop-is-a-second-class-corporate-citizen-mike-jang-gitlab'
+    hugo_new_talk 'when-linux-on-the-desktop-is-a-second-class-corporate-citizen-mike-jang-gitlab'
 
     # # https://ossna2020.sched.com/event/cNS8/soda-one-data-framework-infinite-possibilities
     # hugo_new_talk 'soda-one-data-framework-infinite-possibilities'
@@ -112,10 +112,21 @@ main(){
     # hugo_new_talk 'using-mipi-dsi-as-main-display-interface-marcel-ziswiler-toradex-ag'
 
     # https://ossna2020.sched.com/event/c3QN/there-is-no-store-for-self-driving-car-parts-running-the-ultimate-battery-powered-device-with-linux-stephen-segal-matt-fornero-cruise
-    hugo_new_talk 'there-is-no-store-for-self-driving-car-parts-running-the-ultimate-battery-powered-device-with-linux-stephen-segal-matt-fornero-cruise'
+    # hugo_new_talk 'there-is-no-store-for-self-driving-car-parts-running-the-ultimate-battery-powered-device-with-linux-stephen-segal-matt-fornero-cruise'
+
+    # https://ossna2020.sched.com/event/c3Wu/keynote-lightning-talk-wyliodrin-studio-from-prototyping-to-small-scale-deployment-ioana-culic-teaching-assistant-cosmin-daniel-radu-teaching-assistant-politehnica-university-of-bucharest#
+    hugo_new_talk 'keynote-lightning-talk-wyliodrin-studio-from-prototyping-to-small-scale-deployment-ioana-culic-teaching-assistant-cosmin-daniel-radu-teaching-assistant-politehnica-university-of-bucharest'
+
+    # https://ossna2020.sched.com/event/c3St/software-update-ota-for-zephyr-parthiban-nallathambi-linumiz
+    hugo_new_talk 'software-update-ota-for-zephyr-parthiban-nallathambi-linumiz'
+
+    # https://ossna2020.sched.com/event/c3X0/managing-the-wind-remote-management-for-zephyr-devices-with-lwm2m-frederic-desbiens-eclipse-foundation
+    hugo_new_talk 'managing-the-wind-remote-management-for-zephyr-devices-with-lwm2m-frederic-desbiens-eclipse-foundation'
+
+    # https://ossna2020.sched.com/event/c3WB/container-kernel-development-christian-brauner-canonical
+    hugo_new_talk 'container-kernel-development-christian-brauner-canonical'
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     main "$@"
-
 fi
