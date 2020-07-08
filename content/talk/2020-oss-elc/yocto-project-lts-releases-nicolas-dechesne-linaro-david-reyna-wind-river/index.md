@@ -30,6 +30,8 @@ links:
   url: https://www.yoctoproject.org/yocto-project-long-term-support-announced/
 - name: youtube
   url: https://www.youtube.com/user/TheYoctoProject/
+- name: Slides
+  url: https://static.sched.com/hosted_files/ossna2020/34/Yocto%20Project%20LTS%20ELC%20NA%20June%202020.pdf
 
 # https://www.twitch.tv/yocto_project
 # https://stackoverflow.com/search?q=yocto+project

@@ -4,14 +4,15 @@ authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""
-# tags: []
+tags:
+- Linux
 categories: [ "2020-oss-elc" ]
 date: 2020-06-29
 featured: false
 draft: true
 
-# event: "2020 OSS ELC"
-# event_url: ""
+event: "PipeWire: The New Multimedia Service, Now Ready for Automotive"
+event_url: "https://ossna2020.sched.com/event/c3TN/pipewire-the-new-multimedia-service-now-ready-for-automotive-julian-bouzas-collabora"
 # location: ""
 # summary: ""
 # abstract: ""
@@ -21,7 +22,9 @@ publishDate: "2020-06-29"
 
 links:
 - name: Event
-  url: https://ossna2020.sched.com/event/
+  url: https://ossna2020.sched.com/event/c3TN/pipewire-the-new-multimedia-service-now-ready-for-automotive-julian-bouzas-collabora
+- name: Slides
+  url: https://static.sched.com/hosted_files/ossna2020/8d/pipewire-slides.pdf
 
 # image:
 #   caption: ""

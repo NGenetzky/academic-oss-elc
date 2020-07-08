@@ -13,6 +13,7 @@ tags:
 - Embedded Linux Conference (ELC)
 - Real-Time Linux - Performance
 - Tuning and Mainlining
+- Linux
 
 # event: "2020 OSS ELC"
 # event_url: ""

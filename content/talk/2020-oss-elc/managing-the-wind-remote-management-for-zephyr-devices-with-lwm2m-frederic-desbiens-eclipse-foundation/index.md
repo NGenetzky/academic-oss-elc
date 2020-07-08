@@ -9,7 +9,8 @@ date: 2020-07-01
 featured: false
 draft: false
 
-# tags: []
+tags:
+- RTOS
 
 event: "Managing the Wind: Remote Management for Zephyr Devices With LwM2M"
 event_url: "https://ossna2020.sched.com/event/c3X0/managing-the-wind-remote-management-for-zephyr-devices-with-lwm2m-frederic-desbiens-eclipse-foundation"

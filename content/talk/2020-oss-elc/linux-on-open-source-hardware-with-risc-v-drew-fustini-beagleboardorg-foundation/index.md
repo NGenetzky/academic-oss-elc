@@ -4,11 +4,12 @@ authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""
-# tags: []
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
 featured: false
 draft: false
+tags:
+- Linux
 
 event: "Linux on Open Source Hardware with RISC-V"
 event_url: "https://ossna2020.sched.com/event/c3Pn/linux-on-open-source-hardware-with-risc-v-drew-fustini-beagleboardorg-foundation"

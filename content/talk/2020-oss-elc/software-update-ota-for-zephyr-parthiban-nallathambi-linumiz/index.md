@@ -12,6 +12,7 @@ draft: false
 tags:
 - Internet of Things
 - Outside World Meets IoT RTOSes
+- RTOS
 
 event: "Software Update (OTA) for Zephyr"
 event_url: "https://ossna2020.sched.com/event/c3St/software-update-ota-for-zephyr-parthiban-nallathambi-linumiz"

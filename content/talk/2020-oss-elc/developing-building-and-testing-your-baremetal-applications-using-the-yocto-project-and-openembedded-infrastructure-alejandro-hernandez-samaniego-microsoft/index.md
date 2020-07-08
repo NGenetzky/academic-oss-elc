@@ -6,8 +6,10 @@ authors: [ "nathan-genetzky" ]
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
-featured: false
+featured: true
 draft: true
+tags:
+- Yocto
 
 event: "Developing, Building and Testing Your Baremetal Applications Using The Yocto Project and OpenEmbedded Infrastructure"
 event_url: "https://ossna2020.sched.com/event/c3R6/developing-building-and-testing-your-baremetal-applications-using-the-yocto-project-and-openembedded-infrastructure-alejandro-hernandez-samaniego-microsoft"

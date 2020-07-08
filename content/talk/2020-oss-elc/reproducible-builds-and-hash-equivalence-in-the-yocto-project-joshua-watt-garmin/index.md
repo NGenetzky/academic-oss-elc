@@ -6,13 +6,14 @@ authors: [ "nathan-genetzky" ]
 # summary: ""
 categories: [ "2020-oss-elc" ]
 date: 2020-07-01
-featured: false
+featured: True
 draft: false
 
 tags:
 - Embedded Linux Conference (ELC)
 - Build Systems
 - Embedded Distributions and Development Tools
+- Yocto
 
 event: "Reproducible Builds and Hash Equivalence in the Yocto Project"
 event_url: "https://ossna2020.sched.com/event/c3R9/reproducible-builds-and-hash-equivalence-in-the-yocto-project-joshua-watt-garmin"

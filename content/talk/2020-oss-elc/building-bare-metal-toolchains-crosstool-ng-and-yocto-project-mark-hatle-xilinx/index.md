@@ -4,7 +4,9 @@ authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""
-# tags: []
+tags:
+- Yocto
+
 categories: [ "2020-oss-elc" ]
 date: 2020-06-30
 featured: false

@@ -21,7 +21,7 @@ publishDate: "2020-06-29"
 
 links:
 - name: Event
-  url: https://ossna2020.sched.com/event/
+  url: https://ossna2020.sched.com/event/c3TK/linux-gpio-evolution-and-current-state-of-the-user-api-bartosz-golaszewski-baylibre
 - name: Linux GPIO-Evolution and Current State of the User API.pdf
   url: https://static.sched.com/hosted_files/ossna2020/67/Linux%20GPIO-Evolution%20and%20Current%20State%20of%20the%20User%20API.pdf
 

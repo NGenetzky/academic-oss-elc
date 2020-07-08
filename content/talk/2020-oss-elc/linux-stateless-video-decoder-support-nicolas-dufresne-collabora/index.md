@@ -14,6 +14,7 @@ tags:
 - Audio
 - Video
 - Streaming Media and Graphics
+- Linux
 
 event: "Linux Stateless Video Decoder Support"
 event_url: "https://ossna2020.sched.com/event/c3VY/linux-stateless-video-decoder-support-nicolas-dufresne-collabora"
