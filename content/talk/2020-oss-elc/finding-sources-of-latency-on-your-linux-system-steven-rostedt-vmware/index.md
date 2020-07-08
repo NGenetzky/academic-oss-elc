@@ -1,6 +1,5 @@
 ---
 title: "Finding Sources of Latency on your Linux System"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

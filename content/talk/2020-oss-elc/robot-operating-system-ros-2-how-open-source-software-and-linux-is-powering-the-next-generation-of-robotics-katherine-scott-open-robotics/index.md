@@ -1,6 +1,5 @@
 ---
 title: "Robot Operating System (ROS) 2 - How Open Source Software and Linux is Powering the Next Generation of Robotics"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

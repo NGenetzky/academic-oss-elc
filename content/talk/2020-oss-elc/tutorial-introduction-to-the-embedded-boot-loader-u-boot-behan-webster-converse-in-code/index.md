@@ -1,6 +1,5 @@
 ---
 title: "Tutorial: Introduction to the Embedded Boot Loader U-boot"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

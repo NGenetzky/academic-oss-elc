@@ -1,6 +1,5 @@
 ---
 title: "Using MIPI DSI as Main Display Interface"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

@@ -1,6 +1,5 @@
 ---
 title: "Developing, Building and Testing Your Baremetal Applications Using The Yocto Project and OpenEmbedded Infrastructure"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

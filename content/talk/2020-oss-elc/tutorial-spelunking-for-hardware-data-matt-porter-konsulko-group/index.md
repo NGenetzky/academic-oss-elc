@@ -1,6 +1,5 @@
 ---
 title: "Spelunking for Hardware Data - Matt Porter, Konsulko Group"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

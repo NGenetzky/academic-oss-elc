@@ -1,6 +1,5 @@
 ---
 title: "A Disciplined Approach to Debugging"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

@@ -1,6 +1,5 @@
 ---
 title: "Reproducible Builds and Hash Equivalence in the Yocto Project"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

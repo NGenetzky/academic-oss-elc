@@ -1,6 +1,5 @@
 ---
 title: "Linux Stateless Video Decoder Support"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

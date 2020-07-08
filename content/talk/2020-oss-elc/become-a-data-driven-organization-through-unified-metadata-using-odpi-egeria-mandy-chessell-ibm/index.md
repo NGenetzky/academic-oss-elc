@@ -1,6 +1,5 @@
 ---
 title: "2020 OSS ELC"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

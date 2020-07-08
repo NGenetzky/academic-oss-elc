@@ -1,6 +1,5 @@
 ---
 title: "Software Update (OTA) for Zephyr"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

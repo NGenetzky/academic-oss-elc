@@ -1,6 +1,5 @@
 ---
 title: "Tutorial: Debugging Embedded Devices Using GDB - A Review of Some Lessons Learned"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

@@ -1,6 +1,5 @@
 ---
 title: "YOCTO PROJECT® DEV DAY VIRTUAL NORTH AMERICA 2020"
-authors: [ "nathan-genetzky" ]
 
 # summary: ""
 # tags: []

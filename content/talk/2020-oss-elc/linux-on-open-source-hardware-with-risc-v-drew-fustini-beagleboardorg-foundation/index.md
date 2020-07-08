@@ -1,6 +1,5 @@
 ---
 title: "Linux on Open Source Hardware with RISC-V"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

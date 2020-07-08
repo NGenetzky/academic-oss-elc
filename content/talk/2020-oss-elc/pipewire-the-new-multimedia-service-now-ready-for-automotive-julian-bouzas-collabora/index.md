@@ -1,6 +1,5 @@
 ---
 title: "PipeWire: The New Multimedia Service, Now Ready for Automotive"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

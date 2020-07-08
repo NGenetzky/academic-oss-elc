@@ -1,6 +1,5 @@
 ---
 title: "Managing the Wind: Remote Management for Zephyr Devices With LwM2M"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

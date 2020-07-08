@@ -1,6 +1,5 @@
 ---
 title: "Building Bare Metal Toolchains, Crosstool-ng and Yocto Project"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""

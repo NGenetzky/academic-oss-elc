@@ -1,6 +1,5 @@
 ---
 title: "Yocto Project LTS Releases - Nicolas Dechesne, Linaro & David Reyna, Wind River"
-authors: [ "nathan-genetzky" ]
 
 # subtitle: ""
 # summary: ""
